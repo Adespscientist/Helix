@@ -55,7 +55,7 @@ const SectionContainer = styled.div`
   align-items: center;
   margin: auto;
   position: relative;
-  padding: 20px;
+  padding: 10px;
 `;
 const SectionImage = styled.div`
   background-image: url("/images/helix-landing.png");
@@ -65,7 +65,7 @@ const SectionImage = styled.div`
   position: center center;
   background-size: cover;
   border-radius: 20px;
-  margin: 40px;
+  margin: 22px;
   z-index: -1;
 
   @media (max-width: 1000px) {
