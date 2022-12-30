@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
-import { ExpandMore, GetApp } from '@material-ui/icons';
+import { ExpandMore, GetApp, Menu } from '@material-ui/icons';
 export default function Header() {
   return (
-    
+    <>
             <HeaderContainer>
                 <Wrapper>
                 <HeaderLogo src="/images/helix-logo.png" alt="Helix-logo"></HeaderLogo>
@@ -19,6 +19,12 @@ export default function Header() {
                     </WrapperLink>
                 </Wrapper>
             </HeaderContainer>
+             <SmallWrapper>
+             <BurgerMenu><CustomMenu /></BurgerMenu>
+             <HeaderLogoSmall src="/images/helix-logo.png" alt="Helix-logo"></HeaderLogoSmall>
+             <ButtonLinkSmall> <CustomBtn /></ButtonLinkSmall>
+             </SmallWrapper>
+             </>
       
   )
 }
@@ -26,6 +32,10 @@ export default function Header() {
 const HeaderContainer = styled.div`
 padding:10px 35px 0 35px;
 margin:auto;
+@media (max-width: 1000px){
+    display:none;
+}
+
 
 
 `;
@@ -55,6 +65,10 @@ const WrapperLink = styled.div`
     }
     a{
         padding:10px;
+        font-weight:300;
+    }
+    @media (max-width:1000px){
+        display:none;
     }
 `;
 const CustomBtn = styled(GetApp)`
@@ -72,3 +86,33 @@ const ButtonLink = styled.button`
         border:1px soild #000;
       
 `;  
+const ButtonLinkSmall = styled.button`
+        background:#0EB74F;
+        border-radius: 100%;
+        width:50px;
+        padding:10px;
+        border:1px soild #000;
+      
+`;  
+const SmallWrapper = styled.div`
+display:none;
+@media (max-width: 1000px){
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px;
+}    
+   
+`;  
+const BurgerMenu = styled(Menu)`    
+      
+`;  
+const CustomMenu = styled.div`    
+      
+`;  
+const HeaderLogoSmall = styled.img`    
+width:80px;
+height:20px;
+objext-fit:contain;
+`;  
+
