@@ -1,14 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
-  overflow-x:inherit;
+  overflow-x: hidden ;
 }
 
-body{
-  background:#fcf5eb;
+@layer base{
+  body{
+      background:#fcf5eb;
+  }
+  p{
+    
+  }
 }
+

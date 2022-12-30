@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "image": "/images/helix-chat.png"
+
+    },
+
+    {
+        "id": 2,
+        "text": "With private messaging and calling, you can be yourself, speak freely and feel close to the most important people in your life no matter where they are.",
+        "center":"center"
+    },
+    {
+        "id": 3,
+        "image": "/images/helix-chat2.png"
+
+    }
+]

@@ -1,12 +1,11 @@
 import React from 'react'
 import JumbotronContainer from './container/Jumbotron'
-import ChatContainer from './container/Chat'
-import Section from './container/Section'
-import './index.css'
-export default function App() {
+import ChatContainer from './container/chat'
+export default function Home() {
+ 
+  
   return (
     <>
-    <Section />
        <ChatContainer />
       <JumbotronContainer />
       </>

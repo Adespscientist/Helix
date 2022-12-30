@@ -1,0 +1,51 @@
+
+[
+    {
+        "id": 1,
+        "title": "Never miss a moment with voice and video calls",
+        "subTitle": "From a group call to classmates to a quick call with mom, feel like you’re in the same room with voice and video calls.",
+        "image": "/images/helix-video.png",
+        "alt": "Video Call",
+        "btn":"Learn More",
+        "border":"",
+        "direction": "row"
+      },
+      {
+        "id": 2,
+        "bg": "red",
+        "title": "Speak Freely",
+        "subTitle": "With end-to-end encryption, your personal messages and calls are secured. Only you and the person you're talking to can read or listen to them, and nobody in between, not even WhatsApp.",
+        "image": "/images/helix-enc.png",
+        "alt": "encryptions",
+        "btn":"Learn More",
+        "direction": "row-reverse"
+      },
+      {
+        "id": 3,
+        "title": "Keep in touch with your groups",
+        "subTitle": "Whether it's planning an outing with friends or simply staying on top of your family chats, group conversations should feel effortless.",
+         "image": "/images/helix-bestfriend.png",
+        "alt": "Keep in touch",
+        "direction": "row"
+      },
+      {
+        "id": 4,
+        "title": "Say what you feel",
+        "subTitle": "Express yourself without words. Use stickers and GIFs or share everyday moments on Status. Record a voice message for a quick hello or a longer story.",
+         "image": "/images/helix-happy.png",
+        "alt": "Keep in touch",
+        "btn":"Learn More",
+        "direction": "row-reverse"
+      },
+      {
+        "id": 5,
+        "title": "Transform your Business",
+        "subTitle": "WhatsApp Business helps you reach your customers globally to deliver compelling experiences at scale. Showcase your products and services, increase sales, and build relationships all with WhatsApp.",
+         "image": "/images/helix-catalog.png",
+        "alt": "Transform your Business",
+        "btn":"Learn More",
+        
+        "direction": "row"
+      }
+    ]
+    

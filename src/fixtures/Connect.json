@@ -1,0 +1,42 @@
+[
+    {
+    "id": 1,
+    "logo": "/images",
+    "alt":"Logo favicon",
+    "title": "Inproved Calling on WhatsApp",
+    "caption":"While WhatsApp is best known for bringing private and secure messaging to users across the world, more and more people are using WhatsApp as a way to...",
+    "button": "Read more"
+    },
+    {
+        "id": 1,
+        "logo": "/images",
+        "alt":"Logo favicon",
+        "title": "Avatars on Whatsapp",
+        "caption":"Today we’re excited to bring avatars to WhatsApp, a new and personalized way to express yourself.",
+        "button": "Read more"
+        },
+    {
+        "id": 1,
+        "logo": "/images",
+        "alt":"Logo favicon",
+        "title": "Avatars on Whatsapp",
+        "caption":"Today we’re excited to bring avatars to WhatsApp, a new and personalized way to express yourself.",
+        "button": "Read more"
+        },
+    {
+        "id": 1,
+        "logo": "/images",
+        "alt":"Logo favicon",
+        "title": "Avatars on Whatsapp",
+        "caption":"Today we’re excited to bring avatars to WhatsApp, a new and personalized way to express yourself.",
+        "button": "Read more"
+        },
+    {
+        "id": 1,
+        "logo": "/images",
+        "alt":"Logo favicon",
+        "title": "Avatars on Whatsapp",
+        "caption":"Today we’re excited to bring avatars to WhatsApp, a new and personalized way to express yourself.",
+        "button": "Read more"
+        }
+]
