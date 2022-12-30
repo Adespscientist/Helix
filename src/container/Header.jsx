@@ -73,6 +73,8 @@ const WrapperLink = styled.div`
 `;
 const CustomBtn = styled(GetApp)`
 
+
+
 `;  
 const CustomBtnLink = styled(ExpandMore)`
 
@@ -91,7 +93,7 @@ const ButtonLinkSmall = styled.button`
         border-radius: 100%;
         width:50px;
         padding:10px;
-        border:1px soild #000;
+        border:1px solid black;
       
 `;  
 const SmallWrapper = styled.div`
