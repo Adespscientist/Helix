@@ -66,11 +66,13 @@ const SectionImage = styled.div`
   background-size: cover;
   border-radius: 20px;
   margin: 22px;
+  margin-top:100px;
   z-index: -1;
 
   @media (max-width: 1000px) {
     background-position: top center;
     margin: 10px;
+    margin-top:100px;
     height: 90vh;
     flex-direction: row-reverse;
     display: flex;
@@ -124,7 +126,7 @@ const SectionCaption = styled.p`
 `;
 const SectionButton = styled.button`
   padding: 10px;
-  background: #24d366;
+  background: #FFAC1E;
   border-radius: 50px;
   padding: 20px;
   width: 200px;

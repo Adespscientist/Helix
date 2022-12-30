@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "icon":"",
+        "title": "Message Privately",
+        "caption": "End to End Encryption and Privacy Control",
+        "arrow": ""
+    },
+    {
+        "id": 2,
+        "icon":"",
+        "title": "Stay Connected",
+        "caption": "Message and Calls for free around the World",
+        "arrow": ""
+    },
+    {
+        "id": 3,
+        "icon":"",
+        "title": "Build Community",
+        "caption": "Group Conversation Made simple",
+        "arrow": ""
+    },
+    {
+        "id": 4,
+        "icon":"",
+        "title": "Express Yourself",
+        "caption": "Say it with Stickers, voice, GIF's and more",
+        "arrow": ""
+    },
+    {
+        "id": 5,
+        "icon":"",
+        "title": "Helix Business",
+        "caption": "Reach Your Custormers from anywhere",
+        "arrow": ""
+    }
+]

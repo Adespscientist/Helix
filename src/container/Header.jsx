@@ -1,14 +1,29 @@
 import React from 'react'
 import styled from 'styled-components';
-import { ExpandMore, GetApp, Menu } from '@material-ui/icons';
+import { useState } from 'react';
+import { ExpandMore, GetApp, Menu, KeyboardArrowUp, Close } from '@material-ui/icons';
+import Nav from '../components/Nav';
 export default function Header() {
+const [isOpen, setIsOpen] = useState(false);
+const [navIsOpen, setNavIsOpen] = useState(false);
+
+
+
+// const handleClick = ()=>{
+//         setNavIsOpen(true)
+//         alert('hello')
+        
+// }
   return (
     <>
+    
             <HeaderContainer>
+           
                 <Wrapper>
                 <HeaderLogo src="/images/helix-logo.png" alt="Helix-logo"></HeaderLogo>
                     <WrapperLink>
-                    <li><a href="">Features <CustomBtnLink /></a></li>
+                      
+                    <li><button onClick={()=> setIsOpen(!isOpen)}>Features {isOpen  ? <ExpandMore /> : <KeyboardArrowUp />}</button></li>
                     <li><a href="">Privacy</a></li>
                     <li><a href="">Help Center</a></li>
                     <li><a href="">Blog</a></li>
@@ -18,9 +33,14 @@ export default function Header() {
                    <ButtonLink>Download <CustomBtn /></ButtonLink>
                     </WrapperLink>
                 </Wrapper>
-            </HeaderContainer>
+            </HeaderContainer> 
+            {isOpen ? <Nav />: <div></div>}
              <SmallWrapper>
-             <BurgerMenu><CustomMenu /></BurgerMenu>
+             <BurgerMenu >
+                <button onClick={() => setNavIsOpen(!navIsOpen)}>{navIsOpen ? <Close /> :<Menu /> }</button>
+                {navIsOpen ? <Nav />: <div></div>}
+                {/* <CustomMenu onClick={(handleClick)}>Hello</CustomMenu> */}
+                </BurgerMenu>
              <HeaderLogoSmall src="/images/helix-logo.png" alt="Helix-logo"></HeaderLogoSmall>
              <ButtonLinkSmall> <CustomBtn /></ButtonLinkSmall>
              </SmallWrapper>
@@ -80,7 +100,7 @@ const CustomBtnLink = styled(ExpandMore)`
 
 `;  
 const ButtonLink = styled.button`
-        background:#0EB74F;
+        background:rgb(233,169,69);
         border-radius: 50px;
         padding: 0px;
         width: 180px;
@@ -89,7 +109,7 @@ const ButtonLink = styled.button`
       
 `;  
 const ButtonLinkSmall = styled.button`
-        background:#0EB74F;
+        background:rgb(233,169,69);
         border-radius: 100%;
         width:50px;
         padding:10px;
@@ -106,11 +126,12 @@ display:none;
 }    
    
 `;  
-const BurgerMenu = styled(Menu)`    
+const BurgerMenu = styled.div`    
       
 `;  
-const CustomMenu = styled.div`    
-      
+const CustomMenu = styled.button`    
+      background:red;
+      height:200px;
 `;  
 const HeaderLogoSmall = styled.img`    
 width:80px;

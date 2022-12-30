@@ -50,7 +50,7 @@ export default function Footer() {
 }
 
 const FooterContainer= styled.div`
-    background:#111b21;
+    background:rgb(44,51,91);
     color:#fff;
     width:100%;
     position:absolute;
@@ -141,7 +141,7 @@ const Item5= styled(Item2)`
 `;
 const FooterBtn= styled.button`
 padding: 10px;
-background: #24d366;
+background: rgb(233,169,69);
 border-radius: 50px;
 padding: 20px;
 width: 200px;

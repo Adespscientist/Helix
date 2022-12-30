@@ -8,11 +8,16 @@ import './index.css'
 export default function App() {
   return (
     <>
+    <div className="header">
     <Header />
+    </div>
     <Section />
        <ChatContainer />
       <JumbotronContainer />
+      <div className='footer'>
       <Footer />
+      </div>
+      
       </>
   
   )
