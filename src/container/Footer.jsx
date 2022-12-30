@@ -40,6 +40,11 @@ export default function Footer() {
             </Item5>
             </WrapperLink>
         </Wrapper>
+        <Wrapper2>
+        <li className="topic"><a href="">2022 &copy; Helix LLC</a></li>
+        <li className="topic2"><a href="">Terms of Service</a></li>
+             
+            </Wrapper2>
     </FooterContainer>
   )
 }
@@ -47,14 +52,50 @@ export default function Footer() {
 const FooterContainer= styled.div`
     background:#111b21;
     color:#fff;
+    width:100%;
+    position:absolute;
+   
 `;
 const Wrapper= styled.div`
         display:flex;
+        align-items:center;
+        justify-content:center;
         border-bottom:1px solid #ccc;
         padding:100px;   
 
-        @media (max-width: 1000px){
+        @media (max-width: 768px){
             flex-direction:column;
+            padding:10px;
+            align-items:center;
+           
+        }
+        li{
+            list-style:none;
+            padding:30px;
+        }
+`;
+const Wrapper2= styled.div`
+        display:flex;
+        margin:20px;
+        align-items:center;
+        justify-content:center;
+        padding:20px;   
+
+        @media (max-width: 768px){
+            flex-direction:column;
+            padding:10px;
+            align-items:center;
+           
+        }
+        li{
+            list-style:none;
+            padding:30px;
+        }
+        .topic{
+            font-size:13px;
+        }
+        .topic2{
+            font-size: 10px;
         }
 `;
 const Item1= styled.div`
@@ -62,6 +103,10 @@ const Item1= styled.div`
        flex-direction:column;
        justify-content:space-between;
        align-items:center;
+       @media (max-width: 768px){
+        flex-direction:column-reverse;
+        margin:15px 0;
+       }
         `;
 const Item2= styled.div`
 padding:20px;
@@ -80,6 +125,9 @@ li{
 }
 @media (max-width:768px){
         margin:-20px;
+        a{
+            font-size:14px;
+        }
 }
 `;
 const Item3= styled(Item2)`
@@ -99,6 +147,9 @@ padding: 20px;
 width: 200px;
 margin-top: 30px;
 color:#000;
+@media (max-width: 768px){
+    margin-bottom:20px;
+}
 `;
 const CustomBtn= styled(GetApp)`
 
