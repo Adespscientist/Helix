@@ -1,12 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import { GetApp } from '@material-ui/icons';
+import helix from '../images/helix-mainlogo.png'
+import helixwhite from '../images/helix-grp.png'
 export default function Footer() {
   return (
     <FooterContainer>
         <Wrapper>
             <Item1>
-                <FooterLogo src="/images/helix-logo.png" alt="Helix-logo"></FooterLogo>
+                <FooterLogo src={helixwhite} alt="Helix-logo"></FooterLogo>
                 <FooterBtn>Download<CustomBtn /></FooterBtn>
             </Item1>
             <WrapperLink>
@@ -155,8 +157,8 @@ const CustomBtn= styled(GetApp)`
 
 `;
 const FooterLogo = styled.img`
-width:130px;
-height:30px;
+width:100px;
+height:40px;
 objext-fit:contain;
 
 `;

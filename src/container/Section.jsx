@@ -56,6 +56,9 @@ const SectionContainer = styled.div`
   margin: auto;
   position: relative;
   padding: 10px;
+  @media (max-width: 768px){
+    padding:20px;
+  }
 `;
 const SectionImage = styled.div`
   background-image: url("/images/helix-landing.png");
@@ -90,6 +93,9 @@ const SectionMain = styled.div`
     display: flex;
     width: 100%;
   }
+  @media (max-width:1024px){
+    margin-top: 10px;
+}
 `;
 const SectionPane = styled.div`
   margin: 20px;
@@ -101,7 +107,11 @@ const SectionPane = styled.div`
     width: 100%;
   }
 `;
-const SectionLeft = styled.div``;
+const SectionLeft = styled.div`
+  @media (max-width: 768px){
+   margin-bottom:100px;
+  }
+`;
 const SectionRight = styled.div``;
 const SectionTitle = styled.h1`
   font-size: 80px;

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { ExpandMore, GetApp, Menu, KeyboardArrowUp, Close } from '@material-ui/icons';
 import Nav from '../components/Nav';
 import Sidenav from '../components/Sidenav';
+import helix from '../images/helix-mainlogo.png'
 export default function Header() {
 const [isOpen, setIsOpen] = useState(false);
 const [navIsOpen, setNavIsOpen] = useState(false);
@@ -15,13 +16,18 @@ const [navIsOpen, setNavIsOpen] = useState(false);
 //         alert('hello')
         
 // }
+// window.addEventListener('resize', function () {
+//     if (window.innerWidth > '1000px') {
+//         alert('hello')
+//     }
+//   })
   return (
     <>
         
             <HeaderContainer>
            
                 <Wrapper>
-                <HeaderLogo src="/images/helix-logo.png" alt="Helix-logo"></HeaderLogo>
+                <HeaderLogo src={helix} alt="Helix-logo"></HeaderLogo>
                     <WrapperLink>
                       
                     <li><button onClick={()=> setIsOpen(!isOpen)}>Features {isOpen  ? <KeyboardArrowUp /> :<ExpandMore /> }</button></li>
@@ -44,7 +50,9 @@ const [navIsOpen, setNavIsOpen] = useState(false);
              <HeaderLogoSmall src="/images/helix-logo.png" alt="Helix-logo"></HeaderLogoSmall>
              <ButtonLinkSmall> <CustomBtn /></ButtonLinkSmall>
              </SmallWrapper>
+             <CloseMe className="close-me">
              {navIsOpen ? <Sidenav />: null}
+             </CloseMe>
              </>
       
   )
@@ -61,8 +69,8 @@ margin:auto;
 
 `;
 const HeaderLogo = styled.img`
-    width:130px;
-    height:30px;
+    width:100px;
+    height:40px;
     objext-fit:contain;
     margin-right:200px;
 `;
@@ -72,17 +80,20 @@ const Wrapper = styled.div`
         justify-content:space-between;
         align-items:center;
         width:100%;
+        margin:10px 0;
+        
 `;
 
 const WrapperLink = styled.div`
     display:flex;
-    align-item:center;
+    align-items:center;
     justify-content:center;
+    
 
     li{
         text-decoration:none;
         list-style:none;
-        padding:20px;
+        padding:15px;
     }
     a{
         padding:10px;
@@ -90,6 +101,13 @@ const WrapperLink = styled.div`
     }
     @media (max-width:1000px){
         display:none;
+    }
+    @media (min-width:1024px){
+        li{
+            text-decoration:none;
+            list-style:none;
+            padding:5px;
+        }
     }
 `;
 const CustomBtn = styled(GetApp)`
@@ -103,8 +121,8 @@ const CustomBtnLink = styled(ExpandMore)`
 const ButtonLink = styled.button`
         background:rgb(233,169,69);
         border-radius: 50px;
-        padding: 0px;
-        width: 180px;
+        padding: 10px;
+     
         margin:0;
         border:1px soild #000;
       
@@ -138,5 +156,12 @@ const HeaderLogoSmall = styled.img`
 width:80px;
 height:20px;
 objext-fit:contain;
+`;  
+const CloseMe = styled.div` 
+ 
+    @media (min-width: 1000px){
+        display:none;
+        background:red;
+    }
 `;  
 
