@@ -15,18 +15,9 @@ const [isScrolled, setIsScrolled] = useState(false);
 useEffect(() =>{
     const handleScroll= ()=>{
 
-   const show = () =>{
-    alert('hello');
-   }
+   
     if(window.scrollY > 0 ){
-        setIsScrolled(true)
-            if(setNavIsOpen(true)){
-                return show
-            }
-            else{
-                return null;
-            }
-        
+        setIsScrolled(true )
     }
     else{
         setIsScrolled(false)
@@ -51,7 +42,7 @@ useEffect(() =>{
 //   })
   return (
     <>
-        <header className = {`${isScrolled && 'bg-[#fff] shadow-sm close-us '}  p-2 transition-all duration-700 `} >
+        <header className = {`${isScrolled && 'bg-[#fff] shadow-sm'}  p-2 transition-all duration-700 `} >
 
        
             <HeaderContainer>
