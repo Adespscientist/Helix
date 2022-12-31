@@ -52,7 +52,7 @@ export default function Footer() {
 }
 
 const FooterContainer= styled.div`
-    background:rgb(44,51,91);
+    background:#151b34;
     color:#fff;
     width:100%;
     position:absolute;

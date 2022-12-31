@@ -42,7 +42,7 @@ useEffect(() =>{
 //   })
   return (
     <>
-        <header className = {`${isScrolled && 'bg-[#fff]'}  p-2`} >
+        <header className = {`${isScrolled && 'bg-[#fff] shadow-sm'}  p-2 transition-all duration-700 `} >
 
        
             <HeaderContainer>

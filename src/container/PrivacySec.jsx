@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-
+import { Fade } from 'react-reveal';
 export default function PrivacySec(){
     return(
         <>
@@ -8,10 +8,27 @@ export default function PrivacySec(){
         <Header />
         </div>
              */}
+             <div className="main">
+                <div className="a_wrap">
+                    <Fade>
+                    <div className='wrap_item'>
+                        <h1>Message Privately</h1>
+                        <p>Your privacy is our priority. With end-to-end encryption, you can be sure that your personal messages stay between you and who you send them to.</p>
+                    </div>
+                    </Fade>
+                    <Fade>
+                    <div className='wrap_item'>
+                            <img src="/images/privacy/private.png" alt="Encryption"/>
+                    </div>
+                    </Fade>
+                </div>
+             </div>
         <div className="main__container">
+            <Fade bottom>
                 <div className="private__title">
                     <h2>Whether it's your confessions, your difficult debates, or your silly inside jokes, your conversations need to <span className="text-green-400">be protected</span></h2>
                 </div>
+                </Fade>
             
             <div className="private__pane">
                 <div className="private__rowq">

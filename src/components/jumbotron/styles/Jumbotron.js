@@ -17,7 +17,7 @@ export const Inner  = styled.div`
 export const Container  = styled.div`
             width:100%;
           .red{
-            background:rgb(44,51,91);
+            background:#151b34;;
             color:#fff;
           }
           .red img{

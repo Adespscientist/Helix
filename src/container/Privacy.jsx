@@ -11,10 +11,10 @@ export default function PrivacyContainer() {
             <Fade bottom>
                
           <Privacy.Pane>
-          <Privacy.Frame>
+        
             <Privacy.Title>{item.title}</Privacy.Title>
             <Privacy.Caption>{item.caption}</Privacy.Caption>
-            </Privacy.Frame>
+        
           </Privacy.Pane>
           </Fade>
           <Fade bottom>

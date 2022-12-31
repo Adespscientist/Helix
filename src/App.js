@@ -53,7 +53,7 @@ export default function App() {
       </Route>
       
       </Routes>
-      <div className='footer'>
+         <div className='footer'>
       <Footer />
       </div>
       </Router>

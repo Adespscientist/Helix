@@ -62,7 +62,7 @@ const Item = styled.div`
 `;
 const Container = styled.div`
         width:100%;
-        background:#2C335B;
+        background:#151b34;
         color:#fff;
 `;
 const Pane = styled.div`

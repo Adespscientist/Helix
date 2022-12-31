@@ -69,7 +69,7 @@ const SectionImage = styled.div`
   background-size: cover;
   border-radius: 20px;
   margin: 22px;
-  margin-top:100px;
+  margin-top:10px;
   z-index: -1;
 
   @media (max-width: 1000px) {
