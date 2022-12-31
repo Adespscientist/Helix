@@ -47,3 +47,35 @@ body{
 
   margin:20px;
 }
+.mainSide{
+  margin-top:40px;
+  
+  top:0;
+  left:0;
+  right:0;
+  display: flex;
+  flex-direction: column;
+  color:#000;
+  height:100vh;
+}
+.nav{
+  padding:20px;
+  height: 100vh;
+  width:10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: left;
+}
+.navMenu2{
+  font-size: 20px;
+  width:100%;
+}
+.navMenu2 a{
+ 
+}
+.navMenu2 li{
+  margin:10px;
+  padding:20px;
+  border-bottom: 1px solid #ccc;
+}

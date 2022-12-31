@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { useState } from 'react';
 import { ExpandMore, GetApp, Menu, KeyboardArrowUp, Close } from '@material-ui/icons';
 import Nav from '../components/Nav';
+import Sidenav from '../components/Sidenav';
 export default function Header() {
 const [isOpen, setIsOpen] = useState(false);
 const [navIsOpen, setNavIsOpen] = useState(false);
@@ -16,7 +17,7 @@ const [navIsOpen, setNavIsOpen] = useState(false);
 // }
   return (
     <>
-    
+        
             <HeaderContainer>
            
                 <Wrapper>
@@ -38,12 +39,12 @@ const [navIsOpen, setNavIsOpen] = useState(false);
              <SmallWrapper>
              <BurgerMenu >
                 <button onClick={() => setNavIsOpen(!navIsOpen)}>{navIsOpen ? <Close /> :<Menu /> }</button>
-                {navIsOpen ? <Nav />: <div></div>}
                 {/* <CustomMenu onClick={(handleClick)}>Hello</CustomMenu> */}
                 </BurgerMenu>
              <HeaderLogoSmall src="/images/helix-logo.png" alt="Helix-logo"></HeaderLogoSmall>
              <ButtonLinkSmall> <CustomBtn /></ButtonLinkSmall>
              </SmallWrapper>
+             {navIsOpen ? <Sidenav />: <div></div>}
              </>
       
   )
