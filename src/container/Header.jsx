@@ -24,7 +24,7 @@ const [navIsOpen, setNavIsOpen] = useState(false);
                 <HeaderLogo src="/images/helix-logo.png" alt="Helix-logo"></HeaderLogo>
                     <WrapperLink>
                       
-                    <li><button onClick={()=> setIsOpen(!isOpen)}>Features {isOpen  ? <ExpandMore /> : <KeyboardArrowUp />}</button></li>
+                    <li><button onClick={()=> setIsOpen(!isOpen)}>Features {isOpen  ? <KeyboardArrowUp /> :<ExpandMore /> }</button></li>
                     <li><a href="">Privacy</a></li>
                     <li><a href="">Help Center</a></li>
                     <li><a href="">Blog</a></li>
@@ -44,7 +44,7 @@ const [navIsOpen, setNavIsOpen] = useState(false);
              <HeaderLogoSmall src="/images/helix-logo.png" alt="Helix-logo"></HeaderLogoSmall>
              <ButtonLinkSmall> <CustomBtn /></ButtonLinkSmall>
              </SmallWrapper>
-             {navIsOpen ? <Sidenav />: <div></div>}
+             {navIsOpen ? <Sidenav />: null}
              </>
       
   )

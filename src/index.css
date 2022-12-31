@@ -79,3 +79,21 @@ body{
   padding:20px;
   border-bottom: 1px solid #ccc;
 }
+
+
+.sideBtn{
+
+  margin:10px;
+  padding:20px;
+  width:100%;
+  border-bottom: 1px solid #ccc;
+}
+.openContainer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sideCap h3{
+  font-size:14px;
+}
