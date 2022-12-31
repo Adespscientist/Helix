@@ -47,7 +47,7 @@ const [navIsOpen, setNavIsOpen] = useState(false);
                 <button onClick={() => setNavIsOpen(!navIsOpen)}>{navIsOpen ? <Close /> :<Menu /> }</button>
                 {/* <CustomMenu onClick={(handleClick)}>Hello</CustomMenu> */}
                 </BurgerMenu>
-             <HeaderLogoSmall src="/images/helix-logo.png" alt="Helix-logo"></HeaderLogoSmall>
+             <HeaderLogoSmall src={helix} alt="Helix-logo"></HeaderLogoSmall>
              <ButtonLinkSmall> <CustomBtn /></ButtonLinkSmall>
              </SmallWrapper>
              <CloseMe className="close-me">
