@@ -43,9 +43,8 @@ body {
   font-size: 24px;
 }
 .mainNav {
-  max-width: 100%;
-  padding: 0;
-  height: 10%;
+width: 90%;
+  padding: 10px;
   margin: 0;
  
 }
@@ -55,16 +54,13 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 10px;
   margin: auto;
+  
 }
 .mainSide {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
+ 
   color: #000;
-  width: 100vw;
-  height: 800px;
+  height: 100vh;
   overflow-y: scroll;
 }
 .nav {
@@ -76,15 +72,15 @@ body {
   align-items: flex-end;
   justify-content: left;
 }
-.navMenu2 {
-  font-size: 20px;
-  width: 100%;
+ul.navMenu2 {
+  
 }
 .navMenu2 a {
 }
 .navMenu2 li {
   margin: 10px;
   padding: 20px;
+
   border-bottom: 1px solid #ccc;
 }
 
@@ -92,29 +88,32 @@ body {
   margin: 10px;
   padding: 20px;
   width: 100%;
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
   border-radius: 40px;
 }
 .openContainer {
+ 
+  padding:0px;
 }
 
 .sideCap h3 {
-  font-size: 14px;
+  font-size: 16px;
+  padding:20px;
 }
 .sideCap {
-  max-height: 1200px;
-  transition: 0.25s cubic-bezier(0.5, 0, 0.1, 1);
-  font-size: 20px;
-  font-weight: normal;
-  line-height: normal;
-  padding: 0.8em 0.2em;
-  white-space: pre-wrap;
-  user-select: none;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding:0 20 0 20px;
+  margin:10px;
+
 }
 
 @media (max-width: 600px) {
   .sideCap {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 

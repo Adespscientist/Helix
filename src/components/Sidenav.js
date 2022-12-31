@@ -9,24 +9,24 @@ export default function Sidenav() {
     const [linkOpen, setLinkOpen] = useState(false)
   return (
     <>
-    <div className="mainSide w-full">
+    <div className="mainSide overflow-hidden">
         <div classname="nav">
             <ul className="navMenu2">
                 <li><NavLink to={ROUTES.HOME}>Home</NavLink></li>
-                <div className="sideBtn transition-all">
+                <div className="sideBtn transition-all duration-700">
                 <div className="openContainer">
                 <button onClick={()=> setLinkOpen(!linkOpen)} className="flex justify-between w-full">Features 
                 {linkOpen ?<Remove className="mr-6" />  : <Add className="mr-6" /> }
                 </button>
-               
+                
                 </div>
                 
                 {linkOpen ? 
                  <>
                  <div className="sideCap">
                  {navData.map((item)=>(
-                    <div className="navMenu1 transition-all duration-[200ms] hover:bg-[#ffa33a]">
-                    <div className="content">
+                    <div className="navMenu1">
+                    <div className="content transition-all duration-700 hover:bg-[#ffa33a]">
                     <h3>{item.title}</h3>
                    
                     <ArrowRightAlt />
@@ -43,7 +43,7 @@ export default function Sidenav() {
                     <li><NavLink to={ROUTES.BLOG}>Blog</NavLink></li>
             </ul>
         </div>
-        <Mobilefooter />
+        
     </div>
                    
     </>

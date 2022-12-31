@@ -5,7 +5,7 @@ import { ExpandMore, GetApp, Menu, KeyboardArrowUp, Close } from '@material-ui/i
 import Nav from '../components/Nav';
 import Sidenav from '../components/Sidenav';
 import helix from '../images/helix-mainlogo.png'
-import {NavLink} from  'react-router-dom'
+import {Link} from  'react-router-dom'
 import  * as ROUTES from '../constants/routes'
 export default function Header() {
 const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +15,18 @@ const [isScrolled, setIsScrolled] = useState(false);
 useEffect(() =>{
     const handleScroll= ()=>{
 
-   
+   const show = () =>{
+    alert('hello');
+   }
     if(window.scrollY > 0 ){
-        setIsScrolled(true )
+        setIsScrolled(true)
+            if(setNavIsOpen(true)){
+                return show
+            }
+            else{
+                return null;
+            }
+        
     }
     else{
         setIsScrolled(false)
@@ -42,27 +51,27 @@ useEffect(() =>{
 //   })
   return (
     <>
-        <header className = {`${isScrolled && 'bg-[#fff] shadow-sm'}  p-2 transition-all duration-700 `} >
+        <header className = {`${isScrolled && 'bg-[#fff] shadow-sm close-us '}  p-2 transition-all duration-700 `} >
 
        
             <HeaderContainer>
            
                 <Wrapper>
                    
-               <NavLink to={ROUTES.HOME}>
+               <Link to={ROUTES.HOME}>
                 
-                 <HeaderLogo to ={ROUTES.HOME} src={helix} alt="Helix-logo"></HeaderLogo></NavLink>
+                 <HeaderLogo to ={ROUTES.HOME} src={helix} alt="Helix-logo"></HeaderLogo></Link>
                 
                     <WrapperLink>
                     <li><button onClick={()=> setIsOpen(!isOpen)}>Features {isOpen  ? <KeyboardArrowUp /> :<ExpandMore /> }</button></li>
                     
-                    <NavLink to={ROUTES.PRIVACY}>Privacy</NavLink>
-                    <NavLink to={ROUTES.FAQ}>Help Centre</NavLink>
-                    <NavLink to={ROUTES.BLOG}>Blog</NavLink>
+                    <Link to={ROUTES.PRIVACY}>Privacy</Link>
+                    <Link to={ROUTES.FAQ}>Help Centre</Link>
+                    <Link to={ROUTES.BLOG}>Blog</Link>
                    
                     </WrapperLink>
                     <WrapperLink>
-                    <NavLink to="/helix">Helix Web</NavLink>
+                    <Link to={ROUTES.HELIXBUSINESS}>Helix Web</Link>
                   
                    <ButtonLink to ={ROUTES.BLOG}>Download <CustomBtn /></ButtonLink>
                     
