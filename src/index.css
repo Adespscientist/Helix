@@ -15,9 +15,9 @@ body {
   overflow-x: hidden;
 }
 @layer components {
-  .header {
-    @apply fixed bg-[#fbfbfa] w-full z-10 mb-4;
-  }
+ .header{
+  @apply sticky top-0  z-10;
+ }
 }
 
 .navMenu {

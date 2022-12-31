@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ExpandMore, GetApp, Menu, KeyboardArrowUp, Close } from '@material-ui/icons';
 import Nav from '../components/Nav';
 import Sidenav from '../components/Sidenav';
@@ -10,8 +10,25 @@ import  * as ROUTES from '../constants/routes'
 export default function Header() {
 const [isOpen, setIsOpen] = useState(false);
 const [navIsOpen, setNavIsOpen] = useState(false);
+const [isScrolled, setIsScrolled] = useState(false);
 
+useEffect(() =>{
+    const handleScroll= ()=>{
 
+   
+    if(window.scrollY > 0 ){
+        setIsScrolled(true )
+    }
+    else{
+        setIsScrolled(false)
+    }
+}
+    window.addEventListener('scroll', handleScroll)
+
+    return () =>{
+        window.removeEventListener('scroll', handleScroll)
+    }
+}, [])
 
 // const handleClick = ()=>{
 //         setNavIsOpen(true)
@@ -25,7 +42,9 @@ const [navIsOpen, setNavIsOpen] = useState(false);
 //   })
   return (
     <>
-        
+        <header className = {`${isScrolled && 'bg-[#fff]'}  p-2`} >
+
+       
             <HeaderContainer>
            
                 <Wrapper>
@@ -64,6 +83,8 @@ const [navIsOpen, setNavIsOpen] = useState(false);
              <CloseMe className="close-me">
              {navIsOpen ? <Sidenav />: null}
              </CloseMe>
+             
+             </header>
              </>
       
   )
