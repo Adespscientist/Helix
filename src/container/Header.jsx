@@ -153,8 +153,8 @@ const CustomMenu = styled.button`
       height:200px;
 `;  
 const HeaderLogoSmall = styled.img`    
-width:80px;
-height:20px;
+width:70px;
+height:30px;
 objext-fit:contain;
 `;  
 const CloseMe = styled.div` 
