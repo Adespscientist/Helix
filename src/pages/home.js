@@ -7,14 +7,10 @@ import Footer from '../container/Footer';
 export default function Home() {
   return <>
 
-<div className="header">
-    <Header />
-    </div>
+
     <Section />
        <ChatContainer />
       <JumbotronContainer />
-      <div className='footer'>
-      <Footer />
-      </div>
+     
   </>
 }

@@ -6,6 +6,7 @@ import 'normalize.css/';
 import './index.css';
 import { Home, Privacy, Faq, Blog,Stayconnected, Community, Express, HelixBusiness } from './pages/index'
 import Header from './container/Header';
+import Footer from './container/Footer';
 
 export default function App() {
   return (
@@ -13,6 +14,10 @@ export default function App() {
   <>
   
     <Router>
+    <div className="header">
+    <Header />
+    </div>
+ 
       <Routes>
       <Route exact path='/blog' element={
         <Blog />
@@ -46,7 +51,11 @@ export default function App() {
         <Home />
       }>
       </Route>
+      
       </Routes>
+      <div className='footer'>
+      <Footer />
+      </div>
       </Router>
       </>
   

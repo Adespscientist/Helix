@@ -1,22 +1,13 @@
 import React from 'react'
-import Footer from '../container/Footer'
-import Header from '../container/Header'
-
-
-import PrivacyContainer from '../container/Privates'
-export default function Privacy() {
+import PrivacyContainer from '../container/Privacy'
+import PrivacySec from '../container/PrivacySec'
+function privacy() {
   return (
     <>
-<div className="header">
-    <Header />
-    </div>
- <PrivacyContainer />
- <div className="footer">
-    <Footer />
-    </div>
-    </>
-  
-  
- 
+    <PrivacySec />
+     <PrivacyContainer />
+     </>
   )
 }
+
+export default privacy
