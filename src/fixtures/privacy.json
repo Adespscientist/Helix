@@ -1,0 +1,53 @@
+
+[
+    {
+        "id": 1,
+        "title": "Two Steps Verification",
+        "caption": "Stay two steps ahead of intruders. Protect your account from hackers and scammers trying to use your phone number.",
+        "image": "../images/privacy/verification.png",
+        "alt": "Verification",
+        "btn":"Learn More",
+        "border":"",
+        "direction": "row-reverse"
+      },
+    {
+        "id": 2,
+        "title": "Disappearing Messages",
+        "caption": "With disappearing messages, you can control which messages stick around and for how long, by setting them up to disappear after you’ve sent them.",
+        "image": "/images/privacy/messages.png",
+        "alt": "Messages",
+        "btn":"Learn More",
+        "border":"",
+        "direction": "row"
+      },
+    {
+        "id": 3,
+        "title": "Block and Report",
+        "caption": "Do away with unwanted chats. If someone you don’t want to chat with is messaging you, simply block them and WhatsApp will make sure you no longer receive their messages or calls.",
+        "image": "/images/privacy/verification.png",
+        "alt": "Verification",
+        "btn":"Learn More",
+        "border":"",
+        "direction": "row-reverse"
+      },
+    {
+        "id": 4,
+        "title": "Encrypted Backups",
+        "caption": "Keep your online backups private. Turn on encrypted backups to extend the security of end-to-end encryption to your messages saved in iCloud or Google Drive.",
+        "image": "/images/privacy/verification.png",
+        "alt": "Verification",
+        "btn":"Learn More",
+        "border":"",
+        "direction": "row"
+      },
+    {
+        "id": 5,
+        "title": "Last seen and Onine",
+        "caption": "Choose to be seen by only those you want. You can customize your privacy settings to choose who can see when you’re online, and when you last used WhatsApp.",
+        "image": "/images/privacy/verification.png",
+        "alt": "Verification",
+        "btn":"Learn More",
+        "border":"",
+        "direction": "row-reverse"
+      }
+    ]

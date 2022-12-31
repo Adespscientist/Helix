@@ -5,6 +5,8 @@ import { ExpandMore, GetApp, Menu, KeyboardArrowUp, Close } from '@material-ui/i
 import Nav from '../components/Nav';
 import Sidenav from '../components/Sidenav';
 import helix from '../images/helix-mainlogo.png'
+import {Link as ReactRouterLink} from  'react-router-dom'
+import  * as ROUTES from '../constants/routes'
 export default function Header() {
 const [isOpen, setIsOpen] = useState(false);
 const [navIsOpen, setNavIsOpen] = useState(false);
@@ -27,17 +29,21 @@ const [navIsOpen, setNavIsOpen] = useState(false);
             <HeaderContainer>
            
                 <Wrapper>
-                <HeaderLogo src={helix} alt="Helix-logo"></HeaderLogo>
+                    <ReactRouterLink>
+                <HeaderLogo to ={ROUTES.HOME} src={helix} alt="Helix-logo"></HeaderLogo>
+                </ReactRouterLink>
                     <WrapperLink>
-                      
                     <li><button onClick={()=> setIsOpen(!isOpen)}>Features {isOpen  ? <KeyboardArrowUp /> :<ExpandMore /> }</button></li>
+                    
                     <li><a href="">Privacy</a></li>
                     <li><a href="">Help Center</a></li>
                     <li><a href="">Blog</a></li>
                     </WrapperLink>
                     <WrapperLink>
                     <li><a href="">Helix Web</a></li>
-                   <ButtonLink>Download <CustomBtn /></ButtonLink>
+                   <ReactRouterLink>
+                   <ButtonLink to ={ROUTES.BLOG}>Download <CustomBtn /></ButtonLink>
+                    </ReactRouterLink>
                     </WrapperLink>
                 </Wrapper>
             </HeaderContainer> 
@@ -120,7 +126,7 @@ const CustomBtn = styled(GetApp)`
 const CustomBtnLink = styled(ExpandMore)`
 
 `;  
-const ButtonLink = styled.button`
+const ButtonLink = styled(ReactRouterLink)`
         background:rgb(233,169,69);
         border-radius: 50px;
         padding: 10px;
@@ -174,3 +180,6 @@ const CloseMe2 = styled.div`
     }
 `;  
 
+const HeaderLinks = styled.a`
+
+`;

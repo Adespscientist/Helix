@@ -7,7 +7,7 @@ export default function Sidenav() {
     const [linkOpen, setLinkOpen] = useState(false)
   return (
     <>
-    <div className="mainSide">
+    <div className="mainSide w-full">
         <div classname="nav">
             <ul className="navMenu2">
                 <li><a href="Home">Home</a></li>

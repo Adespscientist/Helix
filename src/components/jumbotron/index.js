@@ -3,7 +3,7 @@ import React from "react";
 import {Container, Pane, Title, SubTitle, ButtonLink,  Item, Inner, Image, BorderBtm} from "./styles/Jumbotron";
 
 
-export  function Jumbotron({
+export default function Jumbotron({
   children,
   direction = "row",
   ...restProps

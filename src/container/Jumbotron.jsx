@@ -1,5 +1,5 @@
 import React from "react"
-import {Jumbotron} from '../components/jumbotron/index'
+import Jumbotron from '../components/jumbotron/index'
 import jumbo from '../fixtures/Jumbo.json';
 import Fade from 'react-reveal'
 import MenuIcon from '@material-ui/icons/Menu';

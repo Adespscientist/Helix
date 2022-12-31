@@ -1,7 +1,7 @@
 import React from "react";
 import {Container, Pane, Image } from '../jumbotron/styles/Jumbotron'
 
-export  function Chat({children, ...restProps}){
+export default function Chat({children, ...restProps}){
     return(
         <Container {...restProps}>{children}</Container>
        
