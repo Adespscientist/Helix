@@ -6,13 +6,16 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  overflow-x:inherit;
+ 
+ 
 }
 :root {
   --btn: #fffcf9;
 }
 body{
   background:var(--btn);
+  overflow-x: hidden;
+  
 }
 @layer components{
   .header{
@@ -30,9 +33,15 @@ body{
   margin:40px;
   background:#fff;
   border-radius:20px;
-
+  overflow-x: hidden;
+ 
   border: 1px solid rgb(194, 181, 181);
   transition: hover 2s ease;
+}
+@media (max-width:1000px){
+  .navMenu{
+    overflow-y: scroll;
+  }
 }
 .navMenu h3{
   width:100%;
@@ -40,30 +49,32 @@ body{
   font-size:24px;
 }
 .mainNav{
-  width:100%;
-  padding:20px;
-  height:40%;
+  max-width:100%;
+  padding:0;
+  height:10%;
+  margin:0;
 }
 .content{
-  /* padding:20px; */
-
-  margin:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+width:100%;
+padding:10px;
+  margin:auto;
 }
 .mainSide{
-  margin-top:40px;
-  
-  top:0;
-  left:0;
-  right:0;
   display: flex;
   flex-direction: column;
   color:#000;
-  height:100vh;
+  width:100%;
+  height:800px;
+  overflow: scroll;
 }
 .nav{
   padding:20px;
   height: 100vh;
-  width:10px;
+  
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -91,12 +102,29 @@ body{
   border-bottom: 1px solid #ccc;
 }
 .openContainer{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  height:20px;
+
 }
 
 .sideCap h3{
   font-size:14px;
+}
+.sideCap{
+   max-height:1200px;
+   transition:0.25s cubic-bezier(0.5, 0, 0.1, 1);
+   font-size:20px;
+   font-weight: normal;
+   line-height: normal;
+   padding:.8em .2em;;
+   white-space: pre-wrap;
+   user-select: none;
+   
+    
+   }
+   
+   
+   
+@media (max-width: 600px){
+  .sideCap{
+    font-size:16px;
+  }
 }

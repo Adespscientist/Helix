@@ -4,6 +4,7 @@ import ChatContainer from './container/Chat'
 import Section from './container/Section'
 import  Header from './container/Header'
 import Footer from './container/Footer'
+import 'normalize.css/'
 import './index.css'
 export default function App() {
   return (

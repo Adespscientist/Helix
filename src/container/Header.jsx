@@ -36,12 +36,14 @@ const [navIsOpen, setNavIsOpen] = useState(false);
                     <li><a href="">Blog</a></li>
                     </WrapperLink>
                     <WrapperLink>
-                    <li><a href="">Whatsapp Web</a></li>
+                    <li><a href="">Helix Web</a></li>
                    <ButtonLink>Download <CustomBtn /></ButtonLink>
                     </WrapperLink>
                 </Wrapper>
             </HeaderContainer> 
+            <CloseMe2 className="close-me">
             {isOpen ? <Nav />: <div></div>}
+            </CloseMe2>
              <SmallWrapper>
              <BurgerMenu >
                 <button onClick={() => setNavIsOpen(!navIsOpen)}>{navIsOpen ? <Close /> :<Menu /> }</button>
@@ -160,6 +162,13 @@ objext-fit:contain;
 const CloseMe = styled.div` 
  
     @media (min-width: 1000px){
+        display:none;
+        background:red;
+    }
+`;  
+const CloseMe2 = styled.div` 
+ 
+    @media (max-width: 1000px){
         display:none;
         background:red;
     }

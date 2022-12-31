@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Footer from '../container/Footer'
 import navData from '../fixtures/Nav.json'
 import { Add, Remove, ArrowRightAlt } from '@material-ui/icons'
+import Mobilefooter from './Mobilefooter'
 export default function Sidenav() {
     const [linkOpen, setLinkOpen] = useState(false)
   return (
@@ -10,7 +11,7 @@ export default function Sidenav() {
         <div classname="nav">
             <ul className="navMenu2">
                 <li><a href="Home">Home</a></li>
-                <div className="sideBtn">
+                <div className="sideBtn transition-all">
                 <div className="openContainer">
                 <button onClick={()=> setLinkOpen(!linkOpen)} className="flex justify-between w-full">Features 
                 {linkOpen ?<Remove className="mr-6" />  : <Add className="mr-6" /> }
@@ -41,9 +42,9 @@ export default function Sidenav() {
                 <li><a href="Home">Blog</a></li>
             </ul>
         </div>
-      
+        <Mobilefooter />
     </div>
- 
+                   
     </>
   )
 }
