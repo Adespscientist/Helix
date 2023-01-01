@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title":"Improved Calling on Helix" ,
+        "caption": "While Helix is best known for bringing private and secure messaging to users across the world, more and more people are using Helix as a way to...",
+        "btn": "Read More",
+        "className": "scroll__nav",
+        "icon": "/images/helix-icon.png"
+    },
+    {
+        "id": 2,
+        "title":"Avatars on Helix" ,
+        "caption": "Today we’re excited to bring avatars to Helix, a new and personalized way to express yourself.",
+        "btn": "Read More",
+        "className": "scroll__nav",
+        "icon": "/images/helix-icon.png"
+    },
+    {
+        "id": 3,
+        "title":"Find, Message, and Buy on Helix" ,
+        "caption": "Today we're sharing an update on what we’re building to help people find, message, and buy something from a business on Helix. Our team is in...",
+        "btn": "Read More",
+        "className": "scroll__nav",
+        "icon": "/images/helix-icon.png"
+    },
+    {
+        "id": 4,
+        "title":"Communities Now Available!" ,
+        "caption": "As we shared earlier this year, we’ve been hard at work building Communities, a major update to how people will be able to connect on Helix in the...",
+        "btn": "Read More",
+        "className": "scroll__nav",
+        "icon": "/images/helix-icon.png"
+    },
+    {
+        "id": 5,
+        "title":"New Features for More Privacy, More Protection, More Control",
+        "caption": "At Helix, Privacy is in our DNA, and we will never stop building new ways to protect your personal conversations. We believe messaging and calling...",
+        "btn": "Read More",
+        "className": "scroll__nav",
+        "icon": "/images/helix-icon.png"
+    }
+]

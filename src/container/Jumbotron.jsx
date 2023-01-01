@@ -5,11 +5,13 @@ import Fade from 'react-reveal'
 import MenuIcon from '@material-ui/icons/Menu';
 import styled from 'styled-components';
 import { ArrowForwardIos } from "@material-ui/icons";
+import Scroll from "../components/Scroll";
 
 
 export default function JumbotronContainer(){
    
     return(
+        <>
         <Jumbotron.Container>
            
            {jumbo.map((item)=>(
@@ -33,6 +35,8 @@ export default function JumbotronContainer(){
            ))
            }
         </Jumbotron.Container>
+        <Scroll />
+        </>
     )
 }
  const CustomMenu = styled(ArrowForwardIos)`
