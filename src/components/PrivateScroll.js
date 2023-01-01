@@ -182,7 +182,8 @@ color:#fff;
 `;
 
 const MainButton = styled.div`
-
+padding:50px;
+margin:40px;
 @media (max-width:1000px){
     margin-top:420px;
     position:absolute;
