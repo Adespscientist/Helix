@@ -41,8 +41,8 @@ export default function Scroll(){
         
                 <h2>Connect Us</h2>
                 <div className='scroll__btn transition-all'>
-          <button onClick={() => {handleHorizantalScroll(elementRef.current,20, 350,  -50)}} disabled={arrowDisable}><ChevronLeft/></button>
-          <button onClick={() => {handleHorizantalScroll(elementRef.current,20, 350, 50)}}><ChevronRight/></button>
+          <button onClick={() => {handleHorizantalScroll(elementRef.current,20, 250,  -20)}} disabled={arrowDisable}><ChevronLeft/></button>
+          <button onClick={() => {handleHorizantalScroll(elementRef.current,20, 250, 20)}}><ChevronRight/></button>
 
           </div>
             </div>
@@ -55,7 +55,7 @@ export default function Scroll(){
                             <img  className="icon" src={item.icon} alt="helix-icon"/>
                     <h3>{item.title}</h3>
                     <p>{item.caption}</p>
-                    <button>{item.btn} <ChevronRight/></button>
+                    <button>{item.btn} </button>
                     </Fade>
                     </div>
                     </div>
