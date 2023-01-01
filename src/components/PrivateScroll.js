@@ -46,7 +46,7 @@ export default function PrivateScroll() {
               <MainButton>
                 <button className="scroll_btn2"
                   onClick={() => {
-                    handleHorizantalScroll(elementRef.current, 20, 225, -10);
+                    handleHorizantalScroll(elementRef.current, 20, 300, -10);
                   }}
                   disabled={arrowDisable}
                 >
@@ -54,7 +54,7 @@ export default function PrivateScroll() {
                 </button>
                 <button className="scroll_btn2"
                   onClick={() => {
-                    handleHorizantalScroll(elementRef.current, 20, 225, 10);
+                    handleHorizantalScroll(elementRef.current, 20, 300, 10);
                   }}
                 >
                   <ChevronRight />
@@ -107,9 +107,10 @@ const ScrollContainer = styled.div`
   display: flex;
   overflow: hidden;
   width: 60%;
+ 
   margin: 0;
   @media (max-width:1000px){
-  
+  width:80%;
   }
 `;
 
@@ -123,7 +124,8 @@ background-color: #101527;
   justify-content:center;
 
   @media (max-width:1000px){
-
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
      height: 100vh;
   
   }
@@ -182,7 +184,7 @@ color:#fff;
 const MainButton = styled.div`
 
 @media (max-width:1000px){
-    margin-top:450px;
+    margin-top:420px;
     position:absolute;
 }
 
@@ -197,8 +199,8 @@ const Scrolled = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width:1000px){
-    width: 100%;
-    padding:10px;
+    width: 60%;
+    
    
   }
 `;
@@ -207,6 +209,7 @@ const ScrolledPane = styled.div`
 `;
 const ScrolledImage = styled.img`
   border-radius: 20px;
+
 `;
 const ScrolledTitle = styled.h2`
 font-size:30px;
