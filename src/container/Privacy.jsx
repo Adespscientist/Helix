@@ -2,10 +2,12 @@ import React from "react";
 import { Privacy } from "../components";
 import privateData from "../fixtures/privacy.json";
 import { Fade } from "react-reveal";
+import PrivateScroll from "../components/PrivateScroll";
 export default function PrivacyContainer() {
   return (
+    <>
     <Privacy.Container>
-      {privateData.map((item) => (
+      {privateData.items1.map((item) => (
         
         <Privacy key={item.id} direction={item.direction}>
             <Fade bottom>
@@ -29,5 +31,7 @@ export default function PrivacyContainer() {
         
       ))}
     </Privacy.Container>
+    <PrivateScroll />
+    </>
   );
 }

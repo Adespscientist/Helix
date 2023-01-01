@@ -1,6 +1,7 @@
 
-[
-    {
+{
+  "items1":[
+     {
         "id": 1,
         "title": "Two Steps Verification",
         "caption": "Stay two steps ahead of intruders. Protect your account from hackers and scammers trying to use your phone number.",
@@ -50,4 +51,48 @@
         "border":"",
         "direction": "row-reverse"
       }
-    ]
+    ],
+  
+        "item2":[
+          {
+            "id": 1,
+            "title": "Stay Connected",
+      
+            "image": "../images/privacy/connected.png",
+            "alt": "Verification",
+            "btn":"Learn More",
+            "border":"",
+            "direction": "row-reverse"
+          },
+        {
+            "id": 2,
+            "title": "Build Community",
+    
+            "image": "/images/privacy/community.png",
+            "alt": "Messages",
+            "btn":"Learn More",
+            "border":"",
+            "direction": "row"
+          },
+        {
+            "id": 3,
+            "title": "Express Yourself",
+    
+            "image": "/images/privacy/yourself.png",
+            "alt": "Messages",
+            "btn":"Learn More",
+            "border":"",
+            "direction": "row"
+          },
+        {
+            "id": 4,
+            "title": "Helix Business",
+    
+            "image": "/images/privacy/helix-business.png",
+            "alt": "Messages",
+            "btn":"Learn More",
+            "border":"",
+            "direction": "row"
+          }
+        ]
+  }

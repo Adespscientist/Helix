@@ -278,8 +278,8 @@ ul.navMenu2 {
   margin-top:150px;
   
 }
-.scroll__btn button{
-  border: 1px solid rgba(107, 107, 107, 0.326);
+.scroll__btn button, .scroll_btn2{
+  border: 1px solid rgba(255, 255, 255, 0.326);
   padding:10px;
   border-radius: 50%;
   margin:15px;
