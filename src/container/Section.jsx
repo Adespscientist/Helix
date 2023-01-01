@@ -57,7 +57,7 @@ const SectionContainer = styled.div`
   position: relative;
   padding: 10px;
   @media (max-width: 768px){
-    padding:20px;
+    padding:0 20px;
   }
 `;
 const SectionImage = styled.div`
@@ -75,7 +75,7 @@ const SectionImage = styled.div`
   @media (max-width: 1000px) {
     background-position: top center;
     margin: 10px;
-    margin-top:100px;
+    margin-top:10px;
     height: 90vh;
     flex-direction: row-reverse;
     display: flex;

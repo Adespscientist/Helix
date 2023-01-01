@@ -30,6 +30,7 @@ body {
   background: #fff;
   border-radius: 20px;
   border: 1px solid rgb(194, 181, 181);
+  
   transition: hover 2s ease;
 }
 @media (max-width: 1000px) {
@@ -58,10 +59,8 @@ width: 90%;
   
 }
 .mainSide {
- 
-  color: #000;
-  height: 100vh;
-  overflow-y: scroll;
+  width: 100%;
+  min-width: 100%;
 }
 .nav {
   padding: 20px;

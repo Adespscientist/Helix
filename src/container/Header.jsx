@@ -15,6 +15,7 @@ const [isScrolled, setIsScrolled] = useState(false);
 useEffect(() =>{
     const handleScroll= ()=>{
 
+
    
     if(window.scrollY > 0 ){
         setIsScrolled(true )
@@ -30,11 +31,11 @@ useEffect(() =>{
     }
 }, [])
 
-// const handleClick = ()=>{
-//         setNavIsOpen(true)
-//         alert('hello')
+const handleClick = ()=>{
         
-// }
+        alert('hello')
+        
+}
 // window.addEventListener('resize', function () {
 //     if (window.innerWidth > '1000px') {
 //         alert('hello')
@@ -42,7 +43,7 @@ useEffect(() =>{
 //   })
   return (
     <>
-        <header className = {`${isScrolled && 'bg-[#fff] shadow-sm'}  p-2 transition-all duration-700 `} >
+        <header className = {`${isScrolled && 'bg-[#fffffffc] shadow-sm'}  p-2 transition-all duration-700 `} >
 
        
             <HeaderContainer>
@@ -74,14 +75,23 @@ useEffect(() =>{
             </CloseMe2>
              <SmallWrapper>
              <BurgerMenu >
+                
                 <button onClick={() => setNavIsOpen(!navIsOpen)}>{navIsOpen ? <Close /> :<Menu /> }</button>
                 {/* <CustomMenu onClick={(handleClick)}>Hello</CustomMenu> */}
                 </BurgerMenu>
+                <Link to={ROUTES.HOME}>
              <HeaderLogoSmall src={helix} alt="Helix-logo"></HeaderLogoSmall>
+             
+             </Link>
              <ButtonLinkSmall> <CustomBtn /></ButtonLinkSmall>
              </SmallWrapper>
+             
              <CloseMe className="close-me">
-             {navIsOpen ? <Sidenav />: null}
+             
+               
+             {navIsOpen ? <Sidenav/>: null}
+                  
+            
              </CloseMe>
              
              </header>

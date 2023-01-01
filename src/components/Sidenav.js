@@ -3,7 +3,7 @@ import Footer from '../container/Footer'
 import navData from '../fixtures/Nav.json'
 import { Add, Remove, ArrowRightAlt } from '@material-ui/icons'
 import Mobilefooter from './Mobilefooter'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import  * as ROUTES from '../constants/routes'
 export default function Sidenav() {
     const [linkOpen, setLinkOpen] = useState(false)
@@ -12,7 +12,7 @@ export default function Sidenav() {
     <div className="mainSide overflow-hidden">
         <div classname="nav">
             <ul className="navMenu2">
-                <li><NavLink to={ROUTES.HOME}>Home</NavLink></li>
+                <li><Link to={ROUTES.HOME}>Home</Link></li>
                 <div className="sideBtn transition-all duration-700">
                 <div className="openContainer">
                 <button onClick={()=> setLinkOpen(!linkOpen)} className="flex justify-between w-full">Features 
@@ -38,9 +38,9 @@ export default function Sidenav() {
                 </>: null}
                
                 </div>
-               <li><NavLink to={ROUTES.PRIVACY}>Privacy</NavLink></li> 
-                    <li><NavLink to={ROUTES.FAQ}>Help Centre</NavLink></li>
-                    <li><NavLink to={ROUTES.BLOG}>Blog</NavLink></li>
+               <li><Link to={ROUTES.PRIVACY}>Privacy</Link></li> 
+                    <li><Link to={ROUTES.FAQ}>Help Centre</Link></li>
+                    <li><Link to={ROUTES.BLOG}>Blog</Link></li>
             </ul>
         </div>
         
