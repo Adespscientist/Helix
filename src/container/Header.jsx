@@ -12,6 +12,7 @@ const [isOpen, setIsOpen] = useState(false);
 const [navIsOpen, setNavIsOpen] = useState(false);
 const [isScrolled, setIsScrolled] = useState(false);
 
+
 useEffect(() =>{
     const handleScroll= ()=>{
 
@@ -31,11 +32,13 @@ useEffect(() =>{
     }
 }, [])
 
-const handleClick = ()=>{
+        function closeBar(){
+            window.addEventListener('click', closeBar)(
+                alert('helo')
+            )
+        }
         
-        alert('hello')
-        
-}
+
 // window.addEventListener('resize', function () {
 //     if (window.innerWidth > '1000px') {
 //         alert('hello')
@@ -50,16 +53,16 @@ const handleClick = ()=>{
            
                 <Wrapper>
                    
-               <Link to={ROUTES.HOME}>
+               <Link onClick={(closeBar)}to={ROUTES.HOME}>
                 
-                 <HeaderLogo to ={ROUTES.HOME} src={helix} alt="Helix-logo"></HeaderLogo></Link>
+                 <HeaderLogo onClick={()=> setIsOpen((false))} to ={ROUTES.HOME} src={helix} alt="Helix-logo"></HeaderLogo></Link>
                 
                     <WrapperLink>
                     <li><button onClick={()=> setIsOpen(!isOpen)}>Features {isOpen  ? <KeyboardArrowUp /> :<ExpandMore /> }</button></li>
                     
-                    <Link onClick={()=> setIsOpen(!isOpen)} to={ROUTES.PRIVACY}>Privacy</Link>
-                    <Link to={ROUTES.FAQ}>Help Centre</Link>
-                    <Link to={ROUTES.BLOG}>Blog</Link>
+                    <Link onClick={()=> setIsOpen(false)} to={ROUTES.PRIVACY}>Privacy</Link>
+                    <Link onClick={()=> setIsOpen(false)} to={ROUTES.FAQ}>Help Centre</Link>
+                    <Link onClick={()=> setIsOpen(false)} to={ROUTES.BLOG}>Blog</Link>
                    
                     </WrapperLink>
                     <WrapperLink>
