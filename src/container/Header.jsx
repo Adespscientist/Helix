@@ -57,7 +57,7 @@ const handleClick = ()=>{
                     <WrapperLink>
                     <li><button onClick={()=> setIsOpen(!isOpen)}>Features {isOpen  ? <KeyboardArrowUp /> :<ExpandMore /> }</button></li>
                     
-                    <Link to={ROUTES.PRIVACY}>Privacy</Link>
+                    <Link onClick={()=> setIsOpen(!isOpen)} to={ROUTES.PRIVACY}>Privacy</Link>
                     <Link to={ROUTES.FAQ}>Help Centre</Link>
                     <Link to={ROUTES.BLOG}>Blog</Link>
                    
