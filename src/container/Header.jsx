@@ -207,7 +207,9 @@ const CloseMe = styled.div`
     }
 `;  
 const CloseMe2 = styled.div` 
- 
+       width:100%;
+       padding:10px;
+       
     @media (max-width: 1000px){
         display:none;
         background:red;

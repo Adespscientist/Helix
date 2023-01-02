@@ -105,9 +105,9 @@ const MainContainer = styled.div`
 `;
 const ScrollContainer = styled.div`
   display: flex;
-  overflow: hidden;
+  overflow-x: scroll;
   width: 60%;
- 
+ scroll-behavior: smooth;
   margin: 0;
   @media (max-width:1000px){
   width:80%;
@@ -182,11 +182,11 @@ color:#fff;
 `;
 
 const MainButton = styled.div`
-padding:10px;
-margin:10px;
+margin-bottom:40px;
 @media (max-width:1000px){
     margin-top:420px;
     position:absolute;
+    margin-bottom:40px;
 }
 
 `;

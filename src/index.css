@@ -22,21 +22,15 @@ body {
 }
 
 .navMenu {
-  display: flex;
   flex-direction: column;
-  padding: 10px;
   width: 100%;
-  margin: 40px;
+  padding:25px;
+  margin:auto;
   background: #fff;
   border-radius: 20px;
   border: 1px solid rgb(194, 181, 181);
-  
-  transition: hover 2s ease;
-}
-@media (max-width: 1000px) {
-  .navMenu {
-    overflow-y: scroll;
-  }
+
+
 }
 .navMenu h3 {
   width: 100%;
@@ -44,18 +38,14 @@ body {
   font-size: 24px;
 }
 .mainNav {
-width: 90%;
-  padding: 10px;
+
   margin: 0;
  
 }
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: auto;
+
+padding:px;
+ 
   
 }
 .mainSide {
@@ -260,6 +250,8 @@ ul.navMenu2 {
 
 }
 
+
+
 .icon{
   width:50px;
   margin-right:40px;
@@ -337,6 +329,10 @@ color:rgb(0, 0, 0);
 }
 
 @media (max-width:1000px){
+  .scroll__div{
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:0px;
+  }
   .inner{
     display: flex;
     flex-direction: column;
@@ -346,7 +342,9 @@ color:rgb(0, 0, 0);
     margin:0;
   }
   .scroll__btn{
-    margin-top:0px;
+    margin-top:450px;
+    position: absolute;
+    padding:20px;
   }
   .itemR{
     width:100%;
@@ -361,6 +359,8 @@ color:rgb(0, 0, 0);
   }
   .scroll__container{
     width:90%;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
     /* padding:50px; */
   }
   .scroll__content h3{
