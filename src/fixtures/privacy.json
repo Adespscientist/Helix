@@ -94,5 +94,34 @@
             "border":"",
             "direction": "row"
           }
+        ],
+
+        "item3":[
+          {
+            "id": 1,
+            "title": "What is End to End Encryption",
+            "link": "/faq"
+            
+          },
+          {
+            "id": 2,
+            "title": "What is Two Step Verification",
+            "link":"/faq"
+          },
+          {
+            "id": 3,
+            "title": "What is Last Seen and Online",
+            "link":"/faq"
+          },
+          {
+            "id": 4,
+            "title": "What are disappearing Messages",
+            "link":"/faq"
+          },
+          {
+            "id": 5,
+            "title": "How do I Block Users",
+            "link":"/faq"
+          }
         ]
   }

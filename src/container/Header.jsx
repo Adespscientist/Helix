@@ -12,7 +12,6 @@ const [isOpen, setIsOpen] = useState(false);
 const [navIsOpen, setNavIsOpen] = useState(false);
 const [isScrolled, setIsScrolled] = useState(false);
 
-
 useEffect(() =>{
     const handleScroll= ()=>{
 
@@ -32,13 +31,11 @@ useEffect(() =>{
     }
 }, [])
 
-        function closeBar(){
-            window.addEventListener('click', closeBar)(
-                alert('helo')
-            )
-        }
+const handleClick = ()=>{
         
-
+        alert('hello')
+        
+}
 // window.addEventListener('resize', function () {
 //     if (window.innerWidth > '1000px') {
 //         alert('hello')
@@ -46,16 +43,16 @@ useEffect(() =>{
 //   })
   return (
     <>
-        <header className = {`${isScrolled && 'bg-[#fffffffc] shadow-sm'}  p-2 transition-all duration-700 `} >
+        <header className = {`${isScrolled &&'bg-[#fffffffc] shadow-sm'}  p-2 transition-all duration-700 `} >
 
        
             <HeaderContainer>
            
                 <Wrapper>
                    
-               <Link onClick={(closeBar)}to={ROUTES.HOME}>
+               <Link  onClick={()=> setIsOpen(false)} to={ROUTES.HOME}>
                 
-                 <HeaderLogo onClick={()=> setIsOpen((false))} to ={ROUTES.HOME} src={helix} alt="Helix-logo"></HeaderLogo></Link>
+                 <HeaderLogo to ={ROUTES.HOME} src={helix} alt="Helix-logo"></HeaderLogo></Link>
                 
                     <WrapperLink>
                     <li><button onClick={()=> setIsOpen(!isOpen)}>Features {isOpen  ? <KeyboardArrowUp /> :<ExpandMore /> }</button></li>

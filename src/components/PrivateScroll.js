@@ -4,6 +4,8 @@ import { ChevronLeft, ChevronRight } from "react-feather";
 import privateData from "../fixtures/privacy.json";
 import styled from "styled-components/macro";
 import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import Scroll from "./Scroll";
 export default function PrivateScroll() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,6 +36,34 @@ export default function PrivateScroll() {
     <>
       {/* <div>{ArrowLeftRounded}</div> */}
       <MainContainer>
+
+      <HelpContainer>
+            <HelpDiv>
+            <Fade bottom>
+                <HelpItem1>
+                <HelpTitle>Need More <span className="text-[#E9A945]">Help ?</span></HelpTitle>
+                <HelpLink className="hover:text-[#E9A945] transition-all cursor-pointer">See all FAQ's</HelpLink>
+        
+                </HelpItem1>
+                
+                   {privateData.item3.map((item) => (
+                    
+                     <Link to={item.link}>
+                        <HelpContent className="hover:bg-[#532ad7] transition-all cursor-pointer" >
+                            <HelpButton>
+                               <HelpTitle2 > {item.title} </HelpTitle2>
+                                <HelpArrow><ArrowOutwardIcon/></HelpArrow>
+                            </HelpButton>
+                        </HelpContent>
+                        </Link>
+                        
+                    ))}
+               
+               </Fade>
+            </HelpDiv>
+        </HelpContainer>
+
+        {/*Main Scroll*/}
         <MainScroll>
           <InnerScroll>
             <ItemR>
@@ -73,25 +103,14 @@ export default function PrivateScroll() {
                   </ScrolledPane>
                   </Fade>
                 </Scrolled>
-                // <div className='scroll__content'>
-                // <img src={item.image} alt="Connected"/>
-                // <h3>{item.title}</h3>
-                // <button>{item.btn}</button>
-                // </div>
-                // <div className="scroll__nav">
-                //     <div className='scroll__content'>
-                //         <Fade>
-                //             <img  className="icon" src={item.icon} alt="helix-icon"/>
-                //     <h3>{item.title}</h3>
-                //     <p>{item.caption}</p>
-                //     <button>{item.btn} </button>
-                //     </Fade>
-                //     </div>
-                //     </div>
               ))}
             </ScrollContainer>
           </InnerScroll>
         </MainScroll>
+
+        {/* Need More Help */}
+
+        
       </MainContainer>
     </>
   );
@@ -227,3 +246,85 @@ color:#fff;
 const ScrolledButton = styled.button`
   color: #fff;
 `;
+
+
+//Help Styled Components
+
+const HelpContainer = styled.div`
+
+`;
+const HelpDiv = styled.div`
+padding:25px;
+width:80%;
+margin:auto;
+color:#fff;
+@media (max-width:1000px){
+    width:100%;
+    padding:30px;
+}
+`;
+const HelpItem1 = styled.div`
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+@media (max-width:1000px){
+    flex-direction:column;
+    align-items:flex-start
+}
+`;
+const HelpItem2 = styled.div`
+`;
+const HelpLink = styled.div`
+border-bottom:2px solid #E9A945
+`;
+const HelpContent = styled.div`
+margin:30px 0 30px 0;
+border:1px solid #003;
+padding:20px;
+border-top-left-radius:20px;
+border-top-right-radius:20px;
+border-bottom-right-radius:20px;
+border-bottom-left-radius:20px;
+transition: transition-all 2s ease;
+
+`;
+
+
+const HelpButton = styled.button`
+        display:flex;
+        justify-content: space-between;
+        width:100%;
+        padding:10px;
+        @media (max-width:1000px){
+            padding:0;
+            
+            align-items:flex-start
+        }
+`;
+const HelpTitle2 = styled.h1`
+@media (max-width:1000px){
+    width:80%;
+    text-align:left;
+    font-size:15px;
+}
+        
+`;
+const HelpTitle = styled.h1`
+        font-size:70px;
+
+        @media (max-width:1000px){
+            font-size:30px;
+        }
+        
+`;
+
+const HelpArrow = styled.div`
+        background:#151B34;
+        border-radius:50%;
+        padding:5px;
+        border:1px solid #fff;
+       
+        
+`;
+
