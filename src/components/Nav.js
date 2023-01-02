@@ -5,6 +5,7 @@ import navData from '../fixtures/Nav.json'
 import  * as ROUTES from '../constants/routes'
 export default function Nav(){
     return (
+    
         <div className="mainNav flex justify-center w-full border-r-4 ">
             {navData.map((item)=>(
                 <Link to={item.link}>
