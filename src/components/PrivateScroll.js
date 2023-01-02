@@ -107,7 +107,7 @@ const ScrollContainer = styled.div`
   display: flex;
   overflow-x: scroll;
   width: 60%;
- scroll-behavior: smooth;
+//  scroll-behavior: smooth;
   margin: 0;
   @media (max-width:1000px){
   width:80%;

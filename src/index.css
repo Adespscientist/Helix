@@ -359,7 +359,7 @@ color:rgb(0, 0, 0);
   }
   .scroll__container{
     width:90%;
-    scroll-behavior: smooth;
+  
     overflow-x: scroll;
     /* padding:50px; */
   }
