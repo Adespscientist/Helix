@@ -9,13 +9,17 @@ export default function ChatContainer(){
         <>
      
         <Container>
-           
+        {chatData.item2.map((item)=>(
+                    <ChatMobile className="flex md:hidden" src={item.image}></ChatMobile>
+                ))}
             {
-            chatData.map((item)=>(
+            chatData.item1.map((item)=>(
                 <Fade>
                 <Wrapper key={item.id}>
                 <ChatText>{item.text}</ChatText>
-                <ChatImage src={item.image} alt={item.alt}></ChatImage>
+                <ChatImage className="hidden md:flex" src={item.image} alt={item.alt}></ChatImage>
+                
+                
                 <Fade bottom>
                 
                 </Fade>
@@ -23,13 +27,17 @@ export default function ChatContainer(){
                 </Wrapper>
                 </Fade>
             ))}
+            {chatData.item2.map((item)=>(
+                    <ChatMobile className="flex md:hidden" src={item.image}></ChatMobile>
+                ))}
            
         </Container>
         </>
     )
 }
 
-const Container = styled.div``;
+const Container = styled.div`
+`;
 const Wrapper = styled.div`
     display:flex;
     flex-direction:column;
@@ -46,6 +54,10 @@ const ChatImage = styled.img`
     margin:auto;
     width:100%;
     height:100%;
+   
+`;
+const ChatMobile = styled.img`
+   padding:10px;
    
 `;
 const ChatText = styled.h3`

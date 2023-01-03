@@ -1,7 +1,8 @@
-[
+{
+    "item1":[
     {
         "id": 1,
-        "image": "/images/helix-chat.png",
+        "image": "/images/newChat2.png",
         "alt":"chat"
 
     },
@@ -13,8 +14,17 @@
     },
     {
         "id": 3,
-        "image": "/images/helix-chat2.png",
+        "image": "/images/newChat2.png",
         "alt":"chat"
 
     }
+],
+    "item2":[
+        {
+        "id": 4,
+        "image": "/images/Mobile.png",
+        "alt":"chat"
+    }
 ]
+
+}
