@@ -32,10 +32,10 @@ export default function Section() {
               </Fade>
 
               <Fade bottom>
-                <SectionImgBottom
+                {/* <SectionImgBottom
                   src="/images/helix-talk.png"
                   alt="Helix-landing-image"
-                ></SectionImgBottom>
+                ></SectionImgBottom> */}
               </Fade>
               <Fade right>
                 <SectionImgTop
