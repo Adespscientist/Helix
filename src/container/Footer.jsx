@@ -78,14 +78,11 @@ const Wrapper= styled.div`
 `;
 const Wrapper2= styled.div`
         display:flex;
-        margin:20px;
         align-items:center;
         justify-content:center;
         padding:20px;   
-
         @media (max-width: 768px){
             flex-direction:column;
-            padding:10px;
             align-items:center;
            
         }
@@ -166,7 +163,7 @@ const WrapperLink = styled.div`
     display:grid;
     grid-template-columns:repeat(4, 1fr);
     padding:20px;
-    grid-gap: 30px;
+    grid-gap: 100px;
     margin:auto;
     @media (max-width: 1000px){
         grid-template-columns:repeat(2, 1fr) ;
