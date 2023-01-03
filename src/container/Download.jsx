@@ -68,7 +68,7 @@ padding:40px;
 @media (max-width:1000px){
     padding:10px;
     font-size:40px;
-    width:50%;
+    width:60%;
 }
 `;
 
@@ -98,7 +98,7 @@ const Download =  styled.div`
     @media (max-width:1000px){
         display:flex;
         flex-direction:column;
-        width:100%;
+        width:80%;
 
     
     }
@@ -117,7 +117,7 @@ const DownloadContent =  styled.div`
     display:flex;
     color:#fff;
     width:20%;
-    border-radius:15px;
+    border-radius:20px;
     flex-direction:column;
     padding:30px;
     margin:20px;
@@ -128,6 +128,7 @@ const DownloadContent =  styled.div`
     @media (max-width:1000px){
      
         width:80%;
+        height:300px;
       
     
     }
@@ -140,6 +141,12 @@ const DownloadTitle =  styled.h2`
 const DownloadImage =  styled.img`
     width:200px;
     margin-top:90px;
+    @media (max-width:1000px){
+     
+      margin-top:40px;
+      
+    
+    }
 `;
 const DownloadCaption =  styled.p`
         font-size:10px;
