@@ -3,13 +3,18 @@ import styled from 'styled-components'
 import { GetApp } from '@material-ui/icons';
 import helix from '../images/helix-mainlogo.png'
 import helixwhite from '../images/helix-grp.png'
+import * as ROUTES from '../constants/routes'
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
   return (
     <FooterContainer>
         <Wrapper>
             <Item1>
                 <FooterLogo src={helixwhite} alt="Helix-logo"></FooterLogo>
+                <Link to={ROUTES.DOWNLOAD}>
                 <FooterBtn>Download<CustomBtn /></FooterBtn>
+                    </Link>
             </Item1>
             <WrapperLink>
             <Item2>
