@@ -115,10 +115,14 @@ export default function Header() {
           <Link to={ROUTES.HOME}>
             <HeaderLogoSmall src={helix} alt="Helix-logo"></HeaderLogoSmall>
           </Link>
+          
           <ButtonLinkSmall>
+          <Link to={ROUTES.DOWNLOAD}>
             {" "}
             <CustomBtn />
+            </Link>
           </ButtonLinkSmall>
+         
         </SmallWrapper>
 
         <CloseMe className="close-me">{navIsOpen ? <Sidenav /> : null}</CloseMe>
