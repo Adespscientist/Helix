@@ -93,7 +93,7 @@ export default function Header() {
               </Link>
             </WrapperLink>
             <WrapperLink>
-              <Link to={ROUTES.HELIXBUSINESS}>Helix Web</Link>
+              {/* <Link to={ROUTES.HELIXBUSINESS}>Helix Web</Link> */}
               <Link to={ROUTES.DOWNLOAD}>
               <ButtonLink >
                 Download <CustomBtn />
@@ -132,15 +132,13 @@ export default function Header() {
 }
 
 const HeaderContainer = styled.div`
-  padding: 0px 35px 0 35px;
-  margin: auto;
+  padding: 0px 35px 0 40px;
   @media (max-width: 1000px) {
     display: none;
   }
 `;
 const HeaderLogo = styled.img`
   width: 100px;
-  height: 40px;
   objext-fit: contain;
   margin-right: 200px;
 `;
@@ -182,11 +180,11 @@ const WrapperLink = styled.div`
 const CustomBtn = styled(GetApp)``;
 const CustomBtnLink = styled(ExpandMore)``;
 const ButtonLink = styled.button`
-  background: rgb(233, 169, 69);
-  border-radius: 50px;
+  background:#f7a31d;
+  border-radius: 30px;
   padding: 10px;
-
-  margin: 0;
+  width:100%;
+  margin: 5px;
   border: 1px soild #000;
 `;
 const ButtonLinkSmall = styled.button`

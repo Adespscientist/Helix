@@ -18,38 +18,47 @@ export default function Footer() {
             </Item1>
             <WrapperLink>
             <Item2>
+                <ul>
                 <li className="topic"><a href=""  >What we do</a></li>
                 <li><a href="">Features</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">Stories</a></li>
                 <li><a href="">For Business</a></li>
+                </ul>
             </Item2>
             <Item3>
+                <ul>
             <li className="topic"><a href="" >Who we are</a></li>
                 <li><a href="">About us</a></li>
                 <li><a href="">Careers</a></li>
                 <li><a href="">Brand Center</a></li>
                 <li><a href="">Privacy</a></li>
+                </ul>
             </Item3>
             <Item4>
+                <ul>
             <li className="topic"><a href="" >Use Helix</a></li>
                 <li><a href="">Andriod</a></li>
                 <li><a href="">Iphone</a></li>
                 <li><a href="">Mac/PC</a></li>
                 <li><a href="">Helix Web</a></li>
+                </ul>
             </Item4>
             <Item5>
+                <ul>
             <li className="topic"><a href="" >Need help ?</a></li>
                 <li><a href="">Contact us</a></li>
                 <li><a href="">Help Center</a></li>
                 <li><a href="">Coronavirus</a></li>
-                
+                </ul>
             </Item5>
             </WrapperLink>
         </Wrapper>
         <Wrapper2>
+            <ul>
         <li className="topic"><a href="">2022 &copy; Helix LLC</a></li>
         <li className="topic2"><a href="">Terms of Service</a></li>
+        </ul>
              
             </Wrapper2>
     </FooterContainer>

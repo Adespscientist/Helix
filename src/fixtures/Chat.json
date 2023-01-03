@@ -1,7 +1,8 @@
 [
     {
         "id": 1,
-        "image": "/images/helix-chat.png"
+        "image": "/images/helix-chat.png",
+        "alt":"chat"
 
     },
 
@@ -12,7 +13,8 @@
     },
     {
         "id": 3,
-        "image": "/images/helix-chat2.png"
+        "image": "/images/helix-chat2.png",
+        "alt":"chat"
 
     }
 ]

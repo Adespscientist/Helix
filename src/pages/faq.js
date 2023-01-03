@@ -1,5 +1,7 @@
 import React from 'react'
-
+import FaqContainer from '../container/Faq'
 export default function Faq() {
-  return <p>Welcome to the New Page Faq</p>
+  return (
+    <FaqContainer />
+  )
 }

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const Inner  = styled.div`
         display:flex;
@@ -37,6 +37,7 @@ export const Item  = styled.div`
 
 export const Pane  = styled.div`
 width:100%;
+height:100%;
 padding:20px;
 margin:40px;
 

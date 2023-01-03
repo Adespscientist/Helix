@@ -151,7 +151,8 @@ const SectionButton = styled.button`
 
 `;
 const SectionImgTop = styled.img`
-  //   padding:10px;
+  width:100%;
+  height:100%;
 `;
 const SectionImgBottom = styled(SectionImgTop)`
   padding: 10px;
@@ -162,7 +163,7 @@ const SectionImgBottom = styled(SectionImgTop)`
 const CustomBtn = styled(GetApp)``;
 const ButtonLink = styled.button`
 padding: 10px;
-background: #ffac1e;
+background: #f7a31d;
 border-radius: 50px;
 cursor:pointer;
 padding: 20px;

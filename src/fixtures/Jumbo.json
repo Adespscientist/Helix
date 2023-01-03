@@ -36,16 +36,6 @@
         "alt": "Keep in touch",
         "btn":"Learn More",
         "direction": "row-reverse"
-      },
-      {
-        "id": 5,
-        "title": "Transform your Business",
-        "subTitle": "WhatsApp Business helps you reach your customers globally to deliver compelling experiences at scale. Showcase your products and services, increase sales, and build relationships all with WhatsApp.",
-         "image": "/images/helix-catalog.png",
-        "alt": "Transform your Business",
-        "btn":"Learn More",
-        
-        "direction": "row"
       }
     ]
     

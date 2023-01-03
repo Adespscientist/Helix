@@ -14,9 +14,10 @@ export default function ChatContainer(){
             chatData.map((item)=>(
                 <Fade>
                 <Wrapper key={item.id}>
+                <ChatText>{item.text}</ChatText>
                 <ChatImage src={item.image} alt={item.alt}></ChatImage>
                 <Fade bottom>
-                <ChatText>{item.text}</ChatText>
+                
                 </Fade>
                 
                 </Wrapper>
@@ -43,10 +44,9 @@ const Wrapper = styled.div`
 const ChatImage = styled.img`
     padding:20px;
     margin:auto;
-
-    @media (max-width: 1000px){
-        width:100%;
-    }
+    width:100%;
+    height:100%;
+   
 `;
 const ChatText = styled.p`
         font-size:50px;
