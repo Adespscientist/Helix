@@ -6,6 +6,7 @@ import PrivateScroll from "../components/PrivateScroll";
 export default function PrivacyContainer() {
   return (
     <>
+   
     <Privacy.Container>
       {privateData.items1.map((item) => (
         

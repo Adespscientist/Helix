@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import { Fade } from 'react-reveal';
+import HeaderDark from './HeaderDark';
 export default function PrivacySec(){
     return(
         <>
@@ -8,6 +9,7 @@ export default function PrivacySec(){
         <Header />
         </div>
              */}
+          
              <div className="main">
                 <div className="a_wrap">
                     <Fade>
