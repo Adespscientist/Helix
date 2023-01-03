@@ -60,7 +60,7 @@ const SectionContainer = styled.div`
   }
 `;
 const SectionImage = styled.div`
-  background-image: url("/images/Helix-bgs.png");
+  background-image: url("/images/helix-bgs.png");
   height: 100vh;
   width: 97%;
   object-fit: contain;
