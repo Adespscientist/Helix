@@ -21,6 +21,10 @@ h1 {
   font-weight:normal;
   font-style:normal;
   }
+
+  h3,p,a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
 :root {
   --btn: #fffcf9;
 }

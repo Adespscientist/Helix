@@ -48,11 +48,11 @@ const ChatImage = styled.img`
     height:100%;
    
 `;
-const ChatText = styled.p`
-        font-size:50px;
+const ChatText = styled.h3`
+        font-size:40px;
         width:80%;
         text-align:center;
-        line-height:2.9rem;
+        
         margin:auto;
 
         @media (max-width: 1000px){

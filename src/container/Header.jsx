@@ -165,6 +165,7 @@ const WrapperLink = styled.div`
   a {
     padding: 10px;
     font-weight: 300;
+    font-size:14px;
   }
   @media (max-width: 1000px) {
     display: none;

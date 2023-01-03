@@ -11,10 +11,9 @@ export default function Section() {
         <SectionMain>
           <SectionPane>
             <SectionLeft>
-              <SectionTitle>Message Privately</SectionTitle>
+              <SectionTitle>Fast, Secure & Reliable.</SectionTitle>
               <SectionCaption>
-                Simple, reliable, private messaging and calling for free*,
-                available all over the world.
+              Stay connected with your family and friends no matter where they are with Helix.
               </SectionCaption>
               <Link to={ROUTES.DOWNLOAD}>
               <ButtonLink>
@@ -61,7 +60,7 @@ const SectionContainer = styled.div`
   }
 `;
 const SectionImage = styled.div`
-  background-image: url("/images/helix-landing.png");
+  background-image: url("/images/Helix-bgs.png");
   height: 100vh;
   width: 97%;
   object-fit: contain;
@@ -121,9 +120,9 @@ const SectionRight = styled.div`
 }
 `;
 const SectionTitle = styled.h1`
-  font-size: 80px;
-  width: 40px;
-  line-height: 6rem;
+  font-size: 50px;
+  width: 80%;
+  line-height: normal;
   font-weight: 300;
   padding: 10px;
   @media (max-width: 1000px) {
