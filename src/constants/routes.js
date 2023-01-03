@@ -6,3 +6,4 @@ export const STAYCONNECTED = '/stayconnected';
 export const COMMUNITY = '/community';
 export const EXPRESSYOURSELF = '/expressyourself';
 export const HELIXBUSINESS = '/helix-business';
+export const DOWNLOAD = '/download';

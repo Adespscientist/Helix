@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Fade } from "react-reveal";
 import { GetApp } from "@material-ui/icons";
+import { Link } from "react-router-dom";
+import * as ROUTES from "../constants/routes";
 export default function Section() {
   return (
     <SectionContainer>
@@ -14,10 +16,11 @@ export default function Section() {
                 Simple, reliable, private messaging and calling for free*,
                 available all over the world.
               </SectionCaption>
-              <SectionButton>
-                Download
-                <CustomBtn />
-              </SectionButton>
+              <Link to={ROUTES.DOWNLOAD}>
+              <ButtonLink>
+                Download <CustomBtn />
+              </ButtonLink>
+              </Link>
             </SectionLeft>
           </SectionPane>
           <SectionPane>
@@ -50,33 +53,29 @@ export default function Section() {
 }
 
 const SectionContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+
   position: relative;
-  padding: 10px;
-  @media (max-width: 768px){
-    padding:0 20px;
+  padding: 15px;
+  @media (max-width: 768px) {
+    padding: 0 20px;
   }
 `;
 const SectionImage = styled.div`
   background-image: url("/images/helix-landing.png");
   height: 100vh;
-  width: 100%;
+  width: 97%;
   object-fit: contain;
   position: center center;
   background-size: cover;
   border-radius: 20px;
-  margin: 22px;
-  margin-top:10px;
+  margin: auto;
   z-index: -1;
 
   @media (max-width: 1000px) {
     background-position: top center;
     margin: 10px;
-    margin-top:10px;
-    height: 90vh;
+    margin-top: 10px;
+    height: 70vh;
     flex-direction: row-reverse;
     display: flex;
   }
@@ -85,7 +84,6 @@ const SectionMain = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 150px;
 
   @media (max-width: 1000px) {
     padding: 20px;
@@ -93,14 +91,19 @@ const SectionMain = styled.div`
     display: flex;
     width: 100%;
   }
-  @media (max-width:1024px){
+  @media (max-width: 1024px) {
     margin-top: 10px;
-}
+  }
 `;
 const SectionPane = styled.div`
-  margin: 20px;
-  padding: 60px;
+  margin-top: 10%;
+  padding: 80px;
+  width:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   color: #fff;
+
   @media (max-width: 1000px) {
     padding: 0;
     text-align: left;
@@ -108,11 +111,15 @@ const SectionPane = styled.div`
   }
 `;
 const SectionLeft = styled.div`
-  @media (max-width: 768px){
-   margin-bottom:100px;
+  @media (max-width: 768px) {
+    margin-bottom: 0px;
   }
 `;
-const SectionRight = styled.div``;
+const SectionRight = styled.div`
+@media (max-width: 768px) {
+  margin-top: 200px;
+}
+`;
 const SectionTitle = styled.h1`
   font-size: 80px;
   width: 40px;
@@ -120,7 +127,7 @@ const SectionTitle = styled.h1`
   font-weight: 300;
   padding: 10px;
   @media (max-width: 1000px) {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 2.5rem;
     padding: 2px;
     font-weight: 600;
@@ -132,15 +139,16 @@ const SectionCaption = styled.p`
   @media (max-width: 1000px) {
     width: 100%;
     padding: 0;
+    font-size:14px;
   }
 `;
 const SectionButton = styled.button`
-  padding: 10px;
-  background: #FFAC1E;
-  border-radius: 50px;
+  
   padding: 20px;
   width: 200px;
   margin-top: 30px;
+  cursor: pointer;
+
 `;
 const SectionImgTop = styled.img`
   //   padding:10px;
@@ -152,3 +160,16 @@ const SectionImgBottom = styled(SectionImgTop)`
   }
 `;
 const CustomBtn = styled(GetApp)``;
+const ButtonLink = styled.button`
+padding: 10px;
+background: #ffac1e;
+border-radius: 50px;
+cursor:pointer;
+padding: 20px;
+  width: 200px;
+  margin-top: 30px;
+  margin-bottom:30px;
+  cursor: pointer;
+
+
+`;

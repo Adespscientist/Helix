@@ -4,7 +4,7 @@ import * as ROUTES from './constants/routes';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'normalize.css/';
 import './index.css';
-import { Home, Privacy, Faq, Blog,Stayconnected, Community, Express, HelixBusiness } from './pages/index'
+import { Home, Privacy, Faq, Blog,Stayconnected, Community, Express, HelixBusiness, Download } from './pages/index'
 import Header from './container/Header';
 import Footer from './container/Footer';
 
@@ -19,6 +19,11 @@ export default function App() {
     </div>
  
       <Routes>
+
+      <Route exact path='/download' element={
+        <Download />
+      }>
+        </Route>
       <Route exact path='/blog' element={
         <Blog />
       }>

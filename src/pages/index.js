@@ -6,3 +6,4 @@ export {default as Stayconnected} from './stayconnected';
 export {default as Community} from './community';
 export {default as Express} from './express';
 export {default as HelixBusiness} from './helix-business';
+export {default as Download} from './download';

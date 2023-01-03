@@ -19,7 +19,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [navIsOpen, setNavIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [navBg, setNavBg] = useState("red");
+  const [navBg, setNavBg] = useState("");
   const [navColor, setNavColor] = useState("white");
   const [changeImg, setChangImage] = useState();
   const location = useLocation();
@@ -62,7 +62,7 @@ export default function Header() {
         style={{ backgroundColor: navBg, color: navColor }}
         className={`${
           isScrolled &&
-          "border-solid border-b-2 border-[#ebe7e7]"
+          "border-solid border-b border-[#ebe7e7]"
         } p-2 transition-all duration-200 `}
       >
         <HeaderContainer>
@@ -94,10 +94,11 @@ export default function Header() {
             </WrapperLink>
             <WrapperLink>
               <Link to={ROUTES.HELIXBUSINESS}>Helix Web</Link>
-
-              <ButtonLink to={ROUTES.BLOG}>
+              <Link to={ROUTES.DOWNLOAD}>
+              <ButtonLink >
                 Download <CustomBtn />
               </ButtonLink>
+              </Link>
             </WrapperLink>
           </Wrapper>
         </HeaderContainer>
@@ -127,7 +128,7 @@ export default function Header() {
 }
 
 const HeaderContainer = styled.div`
-  padding: 10px 35px 0 35px;
+  padding: 0px 35px 0 35px;
   margin: auto;
   @media (max-width: 1000px) {
     display: none;
@@ -145,7 +146,8 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 10px 0;
+  margin:0;
+
 `;
 
 const WrapperLink = styled.div`
