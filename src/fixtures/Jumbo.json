@@ -24,7 +24,7 @@
         "id": 3,
         "title": "Keep in touch with your groups",
         "subTitle": "Whether it's planning an outing with friends or simply staying on top of your family chats, group conversations should feel effortless.",
-         "image": "/images/helix-bestfriend.png",
+         "image": "/images/ship.png",
         "alt": "Keep in touch",
         "direction": "row"
       },
@@ -32,7 +32,7 @@
         "id": 4,
         "title": "Say what you feel",
         "subTitle": "Express yourself without words. Use stickers and GIFs or share everyday moments on Status. Record a voice message for a quick hello or a longer story.",
-         "image": "/images/helix-happy.png",
+         "image": "/images/exp.png",
         "alt": "Keep in touch",
         "btn":"Learn More",
         "direction": "row-reverse"

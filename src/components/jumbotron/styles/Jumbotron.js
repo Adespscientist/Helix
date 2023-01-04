@@ -70,7 +70,7 @@ export const ButtonLink  = styled.button`
         
 `;
 export const Image  = styled.img`
-    width:60%;
+    width:50%;
     max-height:600px;
     height:100%;
     object-fix:contain;
