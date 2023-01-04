@@ -39,7 +39,6 @@ export const Pane  = styled.div`
 width:100%;
 height:100%;
 padding:20px;
-margin:80px;
 
 
 `;
@@ -71,14 +70,14 @@ export const ButtonLink  = styled.button`
         
 `;
 export const Image  = styled.img`
-    width:90%;
-    max-height:700px;
+    width:60%;
+    max-height:600px;
     height:100%;
     object-fix:contain;
     @media (max-width: 1000px){
   
       width:70%;
-      height:70%;
+      height:0%;
       margin:auto;
 
     }
