@@ -5,32 +5,18 @@ import { GetApp } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 import * as ROUTES from "../constants/routes";
 export default function Section() {
-  // etc.
-  // {message.success("Helix", 9000)}
-       
-  //           {message.loading("...", 1000).then(({ destory }) => {
-  //             setTimeout(() => {
-  //               destory();
-  //               message.success("I dey", 1000);
-  //             }, 2000);
-  //           })}
-      
-         
-
   return (
-
     <SectionContainer>
-        
-            
-          
       <SectionImage>
         <SectionMain>
           <SectionPane>
             <SectionLeft>
               <SectionTitle>
                 <message />
-                Fast, <span className="text-[#29335C]">Secure</span> &{" "}
-                <span className="text-[#29335C]">Reliable.</span>
+                Fast, <span className="text-[#29335C]">Secure</span>
+                <span className="text-[#29335C]">
+                  Reliable instant Messaging.
+                </span>
               </SectionTitle>
               <SectionCaption>
                 Stay connected with your family and friends no matter where they
@@ -40,12 +26,10 @@ export default function Section() {
                 <ButtonLink>
                   Download <CustomBtn />
                 </ButtonLink>
-                  
               </Link>
             </SectionLeft>
           </SectionPane>
           <SectionPane>
-            
             {/* <SectionRight>
               <Fade bottom>
                 <SectionImgTop
@@ -142,11 +126,11 @@ const SectionRight = styled.div`
   }
 `;
 const SectionTitle = styled.h1`
-  font-size: 70px;
+  font-size: 50px;
 
   line-height: normal;
   font-weight: 300;
-  padding: 10px;
+  padding: 05px;
   @media (max-width: 1000px) {
     font-size: 30px;
     line-height: 2.5rem;
@@ -182,7 +166,7 @@ const SectionImgBottom = styled(SectionImgTop)`
 const CustomBtn = styled(GetApp)``;
 const ButtonLink = styled.button`
   padding: 10px;
-  background: #29335C;
+  background: #29335c;
   border-radius: 50px;
   cursor: pointer;
   padding: 20px;
