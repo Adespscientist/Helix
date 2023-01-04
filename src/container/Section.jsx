@@ -13,10 +13,8 @@ export default function Section() {
             <SectionLeft>
               <SectionTitle>
                 <message />
-                Fast, <span className="text-[#29335C]">Secure</span>
-                <span className="text-[#29335C]">
-                  Reliable instant Messaging.
-                </span>
+                Fast, <span className="text-[#29335C]">Reliable and </span> <span className="text-[#29335C]">Secure
+                </span> instant Messaging.
               </SectionTitle>
               <SectionCaption>
                 Stay connected with your family and friends no matter where they
@@ -107,7 +105,7 @@ const SectionPane = styled.div`
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-weight: 900;
+
 
   @media (max-width: 1000px) {
     padding: 0px;
