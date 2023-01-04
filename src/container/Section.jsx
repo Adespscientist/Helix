@@ -4,7 +4,6 @@ import { Fade } from "react-reveal";
 import { GetApp } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 import * as ROUTES from "../constants/routes";
-import { message, MessageContainer } from "react-message-popup";
 export default function Section() {
   // etc.
   // {message.success("Helix", 9000)}
