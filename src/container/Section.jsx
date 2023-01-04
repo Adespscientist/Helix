@@ -72,7 +72,6 @@ const SectionImage = styled.div`
 
   @media (max-width: 1000px) {
     background-position: top center;
-    margin: 10px;
     margin-top: 10px;
     height: 70vh;
     flex-direction: row-reverse;

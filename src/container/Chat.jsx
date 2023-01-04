@@ -37,6 +37,7 @@ export default function ChatContainer(){
 }
 
 const Container = styled.div`
+width:100%;
 `;
 const Wrapper = styled.div`
     display:flex;
@@ -61,14 +62,13 @@ const ChatMobile = styled.img`
    
 `;
 const ChatText = styled.h3`
-        font-size:40px;
+        font-size:30px;
         width:80%;
         text-align:center;
-        
         margin:auto;
 
         @media (max-width: 1000px){
-            font-size:30px;
+            font-size:18px;
             line-height:2rem;
         }
 `;
