@@ -4,26 +4,50 @@ import { Fade } from "react-reveal";
 import { GetApp } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 import * as ROUTES from "../constants/routes";
+import { message, MessageContainer } from "react-message-popup";
 export default function Section() {
+  // etc.
+  // {message.success("Helix", 9000)}
+       
+  //           {message.loading("...", 1000).then(({ destory }) => {
+  //             setTimeout(() => {
+  //               destory();
+  //               message.success("I dey", 1000);
+  //             }, 2000);
+  //           })}
+      
+         
+
   return (
+
     <SectionContainer>
+        
+            
+          
       <SectionImage>
         <SectionMain>
           <SectionPane>
             <SectionLeft>
-              <SectionTitle>Fast, Secure & Reliable.</SectionTitle>
+              <SectionTitle>
+                <message />
+                Fast, <span className="text-[#29335C]">Secure</span> &{" "}
+                <span className="text-[#29335C]">Reliable.</span>
+              </SectionTitle>
               <SectionCaption>
-              Stay connected with your family and friends no matter where they are with Helix.
+                Stay connected with your family and friends no matter where they
+                are with Helix.
               </SectionCaption>
               <Link to={ROUTES.DOWNLOAD}>
-              <ButtonLink>
-                Download <CustomBtn />
-              </ButtonLink>
+                <ButtonLink>
+                  Download <CustomBtn />
+                </ButtonLink>
+                  
               </Link>
             </SectionLeft>
           </SectionPane>
           <SectionPane>
-            <SectionRight>
+            
+            {/* <SectionRight>
               <Fade bottom>
                 <SectionImgTop
                   src="/images/helix-audio.png"
@@ -36,14 +60,14 @@ export default function Section() {
                   src="/images/helix-talk.png"
                   alt="Helix-landing-image"
                 ></SectionImgBottom> */}
-              </Fade>
-              <Fade right>
+            {/* </Fade> */}
+            {/* <Fade right>
                 <SectionImgTop
                   src="/images/helix-text.png"
                   alt="Helix-landing-image"
                 ></SectionImgTop>
               </Fade>
-            </SectionRight>
+            </SectionRight>  */}
           </SectionPane>
         </SectionMain>
       </SectionImage>
@@ -52,30 +76,30 @@ export default function Section() {
 }
 
 const SectionContainer = styled.div`
-
   position: relative;
-  padding: 15px;
+  padding: 0 40px;
   @media (max-width: 768px) {
-    padding: 0 20px;
+    padding: 10px;
   }
 `;
 const SectionImage = styled.div`
-  background-image: url("/images/helix-bgs.png");
+  background-image: url("/images/helix-bgg.png");
   height: 100vh;
-  width: 97%;
+  width: 100%;
   object-fit: contain;
-  position: center center;
+  background-position: bottom top;
   background-size: cover;
   border-radius: 20px;
   margin: auto;
   z-index: -1;
+  padding: 50px;
 
   @media (max-width: 1000px) {
     background-position: top center;
-    margin-top: 10px;
-    height: 70vh;
+    height: 75vh;
     flex-direction: row-reverse;
     display: flex;
+    padding: 25px;
   }
 `;
 const SectionMain = styled.div`
@@ -84,7 +108,6 @@ const SectionMain = styled.div`
   align-items: center;
 
   @media (max-width: 1000px) {
-    padding: 20px;
     flex-direction: column-reverse;
     display: flex;
     width: 100%;
@@ -94,16 +117,17 @@ const SectionMain = styled.div`
   }
 `;
 const SectionPane = styled.div`
-  margin-top: 10%;
-  padding: 80px;
-  width:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  margin-top: 5%;
+  padding: 60px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
+  font-weight: 900;
 
   @media (max-width: 1000px) {
-    padding: 0;
+    padding: 0px;
     text-align: left;
     width: 100%;
   }
@@ -114,13 +138,13 @@ const SectionLeft = styled.div`
   }
 `;
 const SectionRight = styled.div`
-@media (max-width: 768px) {
-  margin-top: 200px;
-}
+  @media (max-width: 768px) {
+    margin-top: 200px;
+  }
 `;
 const SectionTitle = styled.h1`
-  font-size: 50px;
-  width: 80%;
+  font-size: 70px;
+
   line-height: normal;
   font-weight: 300;
   padding: 10px;
@@ -137,20 +161,18 @@ const SectionCaption = styled.p`
   @media (max-width: 1000px) {
     width: 100%;
     padding: 0;
-    font-size:14px;
+    font-size: 14px;
   }
 `;
 const SectionButton = styled.button`
-  
   padding: 20px;
   width: 200px;
   margin-top: 30px;
   cursor: pointer;
-
 `;
 const SectionImgTop = styled.img`
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 `;
 const SectionImgBottom = styled(SectionImgTop)`
   padding: 10px;
@@ -160,15 +182,13 @@ const SectionImgBottom = styled(SectionImgTop)`
 `;
 const CustomBtn = styled(GetApp)``;
 const ButtonLink = styled.button`
-padding: 10px;
-background: #f7a31d;
-border-radius: 50px;
-cursor:pointer;
-padding: 20px;
+  padding: 10px;
+  background: #29335C;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 20px;
   width: 200px;
   margin-top: 30px;
-  margin-bottom:30px;
+  margin-bottom: 30px;
   cursor: pointer;
-
-
 `;

@@ -15,7 +15,7 @@
         "bg": "red",
         "title": "Speak Freely",
         "subTitle": "With end-to-end encryption, your personal messages and calls are secured. Only you and the person you're talking to can read or listen to them, and nobody in between, not even WhatsApp.",
-        "image": "/images/helix-enc.png",
+        "image": "/images/encs.png",
         "alt": "encryptions",
         "btn":"Learn More",
         "direction": "row-reverse"

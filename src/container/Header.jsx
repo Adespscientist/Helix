@@ -132,7 +132,8 @@ export default function Header() {
 }
 
 const HeaderContainer = styled.div`
-  padding: 0px 35px 0 40px;
+  padding: 0px 0px 0 40px;
+  margin:0px;
   @media (max-width: 1000px) {
     display: none;
   }
@@ -160,10 +161,10 @@ const WrapperLink = styled.div`
   li {
     text-decoration: none;
     list-style: none;
-    padding: 15px;
+    margin-right: 15px;
   }
   a {
-    padding: 10px;
+    padding-right: 40px;
     font-weight: 300;
     font-size:14px;
   }
@@ -181,9 +182,10 @@ const WrapperLink = styled.div`
 const CustomBtn = styled(GetApp)``;
 const CustomBtnLink = styled(ExpandMore)``;
 const ButtonLink = styled.button`
-  background:#f7a31d;
+  background:#29335C;
   border-radius: 30px;
   padding: 10px;
+  color:#fff;
   width:100%;
   margin: 5px;
   border: 1px soild #000;
