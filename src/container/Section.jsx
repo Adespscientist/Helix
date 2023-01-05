@@ -12,8 +12,7 @@ export default function Section() {
           <SectionPane>
             <SectionLeft>
               <SectionTitle>
-                <message />
-                Fast, <span className="text-[#29335C]">Reliable and </span> <span className="text-[#29335C]">Secure
+                Fast, <span className="text-[#F3A710]">Reliable and </span> <span className="text-[#F3A710]">Secure
                 </span> instant Messaging.
               </SectionTitle>
               <SectionCaption>
@@ -28,10 +27,10 @@ export default function Section() {
             </SectionLeft>
           </SectionPane>
           <SectionPane>
-            {/* <SectionRight>
-              <Fade bottom>
+            <SectionRight>
+              <Fade left>
                 <SectionImgTop
-                  src="/images/helix-audio.png"
+                  src="/images/audio.png"
                   alt="Helix-landing-image"
                 ></SectionImgTop>
               </Fade>
@@ -40,15 +39,21 @@ export default function Section() {
                 {/* <SectionImgBottom
                   src="/images/helix-talk.png"
                   alt="Helix-landing-image"
-                ></SectionImgBottom> */}
-            {/* </Fade> */}
-            {/* <Fade right>
+                ></SectionImgBottom>  */}
+            </Fade>
+            <Fade right>
                 <SectionImgTop
                   src="/images/helix-text.png"
                   alt="Helix-landing-image"
                 ></SectionImgTop>
               </Fade>
-            </SectionRight>  */}
+              <Fade bottom>
+                <SectionImgTop
+                  src="/images/audio.png"
+                  alt="Helix-landing-image"
+                ></SectionImgTop>
+              </Fade>
+            </SectionRight> 
           </SectionPane>
         </SectionMain>
       </SectionImage>
@@ -64,11 +69,11 @@ const SectionContainer = styled.div`
   }
 `;
 const SectionImage = styled.div`
-  background-image: url("/images/helix-bgg.png");
-  height: 100vh;
+  background-image: url("/images/2.png");
+  height: 90vh;
   width: 100%;
   object-fit: contain;
-  background-position: bottom top;
+  background-position: top center;
   background-size: cover;
   border-radius: 20px;
   margin: auto;
@@ -152,8 +157,9 @@ const SectionButton = styled.button`
   cursor: pointer;
 `;
 const SectionImgTop = styled.img`
-  width: 100%;
+  width: 50%;
   height: 100%;
+  margin-top:40px;
 `;
 const SectionImgBottom = styled(SectionImgTop)`
   padding: 10px;
@@ -164,7 +170,7 @@ const SectionImgBottom = styled(SectionImgTop)`
 const CustomBtn = styled(GetApp)``;
 const ButtonLink = styled.button`
   padding: 10px;
-  background: #29335c;
+  background: #F3A710;
   border-radius: 50px;
   cursor: pointer;
   padding: 20px;

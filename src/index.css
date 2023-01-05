@@ -226,6 +226,9 @@ ul.navMenu2 {
   padding:20px;
   margin:auto;
 }
+.wrap_item img{
+  width:80%;
+}
 
 .wrap_item h1{
   width:50%;
@@ -252,6 +255,11 @@ ul.navMenu2 {
     width:100%;
   }
   .wrap_item p{
+    font-size:16px;
+    line-height: normal;
+    width:100%;
+  }
+  .wrap_item {
     font-size:16px;
     line-height: normal;
     width:100%;

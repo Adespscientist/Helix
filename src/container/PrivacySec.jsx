@@ -20,7 +20,7 @@ export default function PrivacySec(){
                     </Fade>
                     <Fade>
                     <div className='wrap_item'>
-                            <img src="/images/privacy/private.png" alt="Encryption"/>
+                            <img src="/images/privacy/encs.png" alt="Encryption"/>
                     </div>
                     </Fade>
                 </div>
