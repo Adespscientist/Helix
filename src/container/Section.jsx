@@ -69,7 +69,7 @@ const SectionContainer = styled.div`
   }
 `;
 const SectionImage = styled.div`
-  background-image: url("/images/2.png");
+  background-image: url("/images/3.png");
   height: 90vh;
   width: 100%;
   object-fit: contain;
